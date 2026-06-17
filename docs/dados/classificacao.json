@@ -1,0 +1,173 @@
+{
+  "atualizado_em": "17/06/2026 17:09",
+  "tabela": [
+    {
+      "nome": "Guinho",
+      "pontos": 3,
+      "jogos": 1,
+      "v": 1,
+      "e": 0,
+      "d": 0,
+      "gp": 3,
+      "gc": 1,
+      "sg": 2,
+      "pos": 1
+    },
+    {
+      "nome": "Fabinho",
+      "pontos": 3,
+      "jogos": 1,
+      "v": 1,
+      "e": 0,
+      "d": 0,
+      "gp": 1,
+      "gc": 0,
+      "sg": 1,
+      "pos": 2
+    },
+    {
+      "nome": "Marcello",
+      "pontos": 1,
+      "jogos": 1,
+      "v": 0,
+      "e": 1,
+      "d": 0,
+      "gp": 2,
+      "gc": 2,
+      "sg": 0,
+      "pos": 3
+    },
+    {
+      "nome": "Roberto",
+      "pontos": 1,
+      "jogos": 1,
+      "v": 0,
+      "e": 1,
+      "d": 0,
+      "gp": 2,
+      "gc": 2,
+      "sg": 0,
+      "pos": 4
+    },
+    {
+      "nome": "Adriana",
+      "pontos": 0,
+      "jogos": 0,
+      "v": 0,
+      "e": 0,
+      "d": 0,
+      "gp": 0,
+      "gc": 0,
+      "sg": 0,
+      "pos": 5
+    },
+    {
+      "nome": "Andrey",
+      "pontos": 0,
+      "jogos": 0,
+      "v": 0,
+      "e": 0,
+      "d": 0,
+      "gp": 0,
+      "gc": 0,
+      "sg": 0,
+      "pos": 6
+    },
+    {
+      "nome": "Camile",
+      "pontos": 0,
+      "jogos": 0,
+      "v": 0,
+      "e": 0,
+      "d": 0,
+      "gp": 0,
+      "gc": 0,
+      "sg": 0,
+      "pos": 7
+    },
+    {
+      "nome": "Eunice",
+      "pontos": 0,
+      "jogos": 0,
+      "v": 0,
+      "e": 0,
+      "d": 0,
+      "gp": 0,
+      "gc": 0,
+      "sg": 0,
+      "pos": 8
+    },
+    {
+      "nome": "Irmã",
+      "pontos": 0,
+      "jogos": 0,
+      "v": 0,
+      "e": 0,
+      "d": 0,
+      "gp": 0,
+      "gc": 0,
+      "sg": 0,
+      "pos": 9
+    },
+    {
+      "nome": "Jean",
+      "pontos": 0,
+      "jogos": 0,
+      "v": 0,
+      "e": 0,
+      "d": 0,
+      "gp": 0,
+      "gc": 0,
+      "sg": 0,
+      "pos": 10
+    },
+    {
+      "nome": "Mônica",
+      "pontos": 0,
+      "jogos": 0,
+      "v": 0,
+      "e": 0,
+      "d": 0,
+      "gp": 0,
+      "gc": 0,
+      "sg": 0,
+      "pos": 11
+    },
+    {
+      "nome": "Yan",
+      "pontos": 0,
+      "jogos": 0,
+      "v": 0,
+      "e": 0,
+      "d": 0,
+      "gp": 0,
+      "gc": 0,
+      "sg": 0,
+      "pos": 12
+    },
+    {
+      "nome": "Wagner",
+      "pontos": 0,
+      "jogos": 1,
+      "v": 0,
+      "e": 0,
+      "d": 1,
+      "gp": 0,
+      "gc": 1,
+      "sg": -1,
+      "pos": 13
+    },
+    {
+      "nome": "Roberta",
+      "pontos": 0,
+      "jogos": 1,
+      "v": 0,
+      "e": 0,
+      "d": 1,
+      "gp": 1,
+      "gc": 3,
+      "sg": -2,
+      "pos": 14
+    }
+  ]
+}

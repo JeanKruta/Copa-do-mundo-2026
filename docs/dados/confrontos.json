@@ -1,0 +1,29 @@
+{
+  "atualizado_em": "17/06/2026 17:09",
+  "confrontos": [
+    {
+      "e1": "Alemanha",
+      "g1": 3,
+      "f1": "de",
+      "e2": "Inglaterra",
+      "g2": 1,
+      "f2": "gb-eng"
+    },
+    {
+      "e1": "Brasil",
+      "g1": 2,
+      "f1": "br",
+      "e2": "Argentina",
+      "g2": 2,
+      "f2": "ar"
+    },
+    {
+      "e1": "França",
+      "g1": 0,
+      "f1": "fr",
+      "e2": "Portugal",
+      "g2": 1,
+      "f2": "pt"
+    }
+  ]
+}

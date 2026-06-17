@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bolão da Copa — Classificação</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topo">
+    <h1>Bolão da Copa</h1>
+    <p class="sub">Classificação dos participantes</p>
+    <p class="atualizado" id="atualizado"></p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Tabela de Classificação</h2>
+      <div class="table-wrap">
+        <table id="tabela">
+          <thead>
+            <tr>
+              <th class="col-pos">#</th>
+              <th class="col-nome">Participante</th>
+              <th title="Pontos">P</th>
+              <th title="Jogos">J</th>
+              <th title="Vitórias">V</th>
+              <th title="Empates">E</th>
+              <th title="Derrotas">D</th>
+              <th title="Gols Pró">GP</th>
+              <th title="Gols Contra">GC</th>
+              <th title="Saldo de Gols">SG</th>
+            </tr>
+          </thead>
+          <tbody id="tabela-corpo"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Confrontos</h2>
+      <div id="confrontos" class="confrontos"></div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>P: Pontos · J: Jogos · V/E/D: Vitórias/Empates/Derrotas · GP/GC: Gols Pró/Contra · SG: Saldo de Gols</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

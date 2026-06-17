@@ -1,0 +1,7 @@
+# Arquivos privados que NUNCA devem ir para produção
+.env
+fonte/resultados.csv
+
+# Python
+__pycache__/
+*.pyc
