@@ -4,7 +4,7 @@ equipes = [
         "paises": ["Uruguai", "Suécia", "Austrália"]
     },
     {
-        "nome": "Irmã",
+        "nome": "Luciene",
         "paises": ["Turquia", "México", "Iraque"]
     },
     {

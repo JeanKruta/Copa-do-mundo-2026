@@ -50,9 +50,9 @@ if ($LASTEXITCODE -ne 0) {
     exit 1
 }
 
-# ---- 4. Envia para o GitHub (somente arquivos públicos) ----
+# ---- 4. Envia para o GitHub (o .gitignore mantém .env e resultados.csv fora) ----
 Write-Host "Enviando para produção..." -ForegroundColor Cyan
-git add docs
+git add -A
 git commit -m ("Atualiza placares - {0}" -f (Get-Date -Format "dd/MM/yyyy HH:mm"))
 if ($LASTEXITCODE -ne 0) {
     Write-Host "Nada novo para enviar (nenhuma mudança nos placares)." -ForegroundColor Yellow
