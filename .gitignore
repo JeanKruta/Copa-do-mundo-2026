@@ -1,6 +1,10 @@
 # Arquivos privados que NUNCA devem ir para produção
 .env
+fonte/resultados.xlsx
 fonte/resultados.csv
+
+# Arquivos temporários do Excel (criados quando a planilha está aberta)
+~$*.xlsx
 
 # Python
 __pycache__/

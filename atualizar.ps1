@@ -2,7 +2,7 @@
 # Uso: clique direito > "Executar com PowerShell", ou no terminal: .\atualizar.ps1
 #
 # Passos: valida a CHAVE_ACESSO do .env -> calcula os JSON -> envia para o GitHub.
-# O resultados.csv e o .env NÃO sobem (estão no .gitignore).
+# O resultados.xlsx e o .env NÃO sobem (estão no .gitignore).
 
 $ErrorActionPreference = "Stop"
 Set-Location -Path $PSScriptRoot
@@ -43,10 +43,17 @@ if (-not $python) {
     exit 1
 }
 
+# Garante que a biblioteca de leitura do Excel (openpyxl) está instalada
+& $python.Source -c "import openpyxl" 2>$null
+if ($LASTEXITCODE -ne 0) {
+    Write-Host "Instalando dependência openpyxl..." -ForegroundColor Cyan
+    & $python.Source -m pip install --quiet --disable-pip-version-check openpyxl
+}
+
 Write-Host "Calculando classificação..." -ForegroundColor Cyan
 & $python.Source (Join-Path $PSScriptRoot "fonte\gerar.py")
 if ($LASTEXITCODE -ne 0) {
-    Write-Host "Falha ao gerar os dados. Corrija o fonte\resultados.csv e tente de novo." -ForegroundColor Red
+    Write-Host "Falha ao gerar os dados. Corrija o fonte\resultados.xlsx e tente de novo." -ForegroundColor Red
     exit 1
 }
 

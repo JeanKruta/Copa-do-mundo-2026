@@ -1,20 +1,25 @@
 # -*- coding: utf-8 -*-
 """
-Lê resultados.csv + equipes.py, calcula a classificação dos participantes
-e gera os arquivos públicos docs/dados/classificacao.json e confrontos.json.
+Lê resultados.xlsx (uma aba por rodada) + equipes.py, calcula a classificação
+acumulada dos participantes e gera os arquivos públicos
+docs/dados/classificacao.json e docs/dados/confrontos.json.
 
+- Cada aba do Excel é uma rodada (Primeira Rodada, ..., Final). A ordem das abas
+  e a ordem das linhas são preservadas.
+- Uma rodada fica "bloqueada" se não tiver nenhum placar preenchido.
 - A comparação de países é feita por código ISO (ignora acentos/grafia),
   então "Catar"/"Qatar" ou "Bósnia"/"Bósnia e Herzegovina" são o mesmo país.
 - Só os times de participantes pontuam; adversários sem dono apenas aparecem
   nos confrontos (com bandeira).
-- O CSV bruto NÃO é publicado: só os JSON calculados vão para produção.
+- O Excel bruto NÃO é publicado: só os JSON calculados vão para produção.
 """
-import csv
 import json
 import os
 import sys
 import unicodedata
 from datetime import datetime, timezone, timedelta
+
+from openpyxl import load_workbook
 
 BASE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, BASE)
@@ -82,7 +87,7 @@ PAIS_ISO = {
     "Papua-Nova Guiné": "pg", "Ilhas Salomão": "sb",
 }
 
-CSV_PATH = os.path.join(BASE, "resultados.csv")
+XLSX_PATH = os.path.join(BASE, "resultados.xlsx")
 SAIDA_DIR = os.path.join(BASE, "..", "docs", "dados")
 
 
@@ -133,8 +138,8 @@ def main():
         for e in equipes
     }
 
-    if not os.path.exists(CSV_PATH):
-        erro(f"{CSV_PATH} não encontrado.")
+    if not os.path.exists(XLSX_PATH):
+        erro(f"{XLSX_PATH} não encontrado.")
 
     def pontuar(nome, gp, gc):
         s = stats[nome]
@@ -148,31 +153,51 @@ def main():
         else:
             s["pontos"] += 1; s["e"] += 1
 
-    confrontos = []
-    with open(CSV_PATH, encoding="utf-8-sig", newline="") as f:
-        for i, row in enumerate(csv.reader(f), start=1):
-            if not row or not any(c.strip() for c in row):
+    def parse_placar(valor):
+        if valor is None:
+            return None
+        if isinstance(valor, str) and valor.strip() == "":
+            return None
+        try:
+            return int(float(valor))
+        except (ValueError, TypeError):
+            return None
+
+    try:
+        wb = load_workbook(XLSX_PATH, data_only=True, read_only=True)
+    except Exception as e:  # arquivo aberto no Excel, corrompido, etc.
+        erro(f"Não consegui abrir o Excel: {e}. Feche o arquivo no Excel e tente de novo.")
+
+    rodadas = []
+    total = 0
+    for nome_aba in wb.sheetnames:
+        ws = wb[nome_aba]
+        confrontos = []
+        for i, row in enumerate(ws.iter_rows(values_only=True), start=1):
+            if row is None:
                 continue
-            if len(row) < 4:
-                erro(f"Linha {i}: esperado 4 colunas (equipe1,placar1,equipe2,placar2): {row}")
+            cels = list(row) + [None, None, None, None]
+            e1 = ("" if cels[0] is None else str(cels[0])).strip()
+            e2 = ("" if cels[2] is None else str(cels[2])).strip()
+            g1 = parse_placar(cels[1])
+            g2 = parse_placar(cels[3])
 
-            e1, p1, e2, p2 = (c.strip() for c in row[:4])
-
-            try:
-                g1, g2 = int(p1), int(p2)
-            except ValueError:
-                if i == 1:
-                    continue  # cabeçalho
-                erro(f"Linha {i}: placar inválido (use números): {row}")
-
+            # linha em branco
+            if not e1 and not e2 and g1 is None and g2 is None:
+                continue
+            # cabeçalho ou jogo ainda sem placar -> ignora (não pontua, não aparece)
+            if g1 is None or g2 is None:
+                continue
             if g1 < 0 or g2 < 0:
-                erro(f"Linha {i}: placar não pode ser negativo: {row}")
+                erro(f"Aba '{nome_aba}', linha {i}: placar não pode ser negativo.")
+            if not e1 or not e2:
+                erro(f"Aba '{nome_aba}', linha {i}: faltou o nome de um país.")
 
             iso1, iso2 = iso_de(e1), iso_de(e2)
             if not iso1:
-                erro(f"Linha {i}: país sem bandeira '{e1}'. Adicione em PAIS_ISO (gerar.py) ou confira a grafia.")
+                erro(f"Aba '{nome_aba}', linha {i}: país sem bandeira '{e1}'. Adicione em PAIS_ISO (gerar.py) ou confira a grafia.")
             if not iso2:
-                erro(f"Linha {i}: país sem bandeira '{e2}'. Adicione em PAIS_ISO (gerar.py) ou confira a grafia.")
+                erro(f"Aba '{nome_aba}', linha {i}: país sem bandeira '{e2}'. Adicione em PAIS_ISO (gerar.py) ou confira a grafia.")
 
             dono1 = dono_por_iso.get(iso1)
             dono2 = dono_por_iso.get(iso2)
@@ -185,6 +210,14 @@ def main():
                 "e1": e1, "g1": g1, "f1": iso1,
                 "e2": e2, "g2": g2, "f2": iso2,
             })
+
+        total += len(confrontos)
+        rodadas.append({
+            "nome": nome_aba,
+            "desbloqueada": len(confrontos) > 0,
+            "confrontos": confrontos,
+        })
+    wb.close()
 
     tabela = list(stats.values())
     for t in tabela:
@@ -199,9 +232,10 @@ def main():
     with open(os.path.join(SAIDA_DIR, "classificacao.json"), "w", encoding="utf-8") as f:
         json.dump({"atualizado_em": atualizado_em, "tabela": tabela}, f, ensure_ascii=False, indent=2)
     with open(os.path.join(SAIDA_DIR, "confrontos.json"), "w", encoding="utf-8") as f:
-        json.dump({"atualizado_em": atualizado_em, "confrontos": confrontos}, f, ensure_ascii=False, indent=2)
+        json.dump({"atualizado_em": atualizado_em, "rodadas": rodadas}, f, ensure_ascii=False, indent=2)
 
-    print(f"OK: {len(confrontos)} confronto(s) processado(s), {len(tabela)} participante(s).")
+    desbloqueadas = sum(1 for r in rodadas if r["desbloqueada"])
+    print(f"OK: {total} confronto(s) em {desbloqueadas}/{len(rodadas)} rodada(s) com placar.")
     print("Gerados: docs/dados/classificacao.json e docs/dados/confrontos.json")
 
 
