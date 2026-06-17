@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "17/06/2026 19:38",
+  "atualizado_em": "17/06/2026 19:39",
   "rodadas": [
     {
       "nome": "Primeira Rodada",
@@ -172,6 +172,14 @@
           "e2": "Congo",
           "g2": 1,
           "f2": "cg"
+        },
+        {
+          "e1": "Inglaterra",
+          "g1": 4,
+          "f1": "gb-eng",
+          "e2": "Croácia",
+          "g2": 2,
+          "f2": "hr"
         }
       ]
     },
