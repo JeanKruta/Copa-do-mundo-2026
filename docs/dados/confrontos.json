@@ -1,29 +1,173 @@
 {
-  "atualizado_em": "17/06/2026 17:09",
+  "atualizado_em": "17/06/2026 17:55",
   "confrontos": [
     {
-      "e1": "Alemanha",
-      "g1": 3,
-      "f1": "de",
-      "e2": "Inglaterra",
+      "e1": "México",
+      "g1": 2,
+      "f1": "mx",
+      "e2": "África do Sul",
+      "g2": 0,
+      "f2": "za"
+    },
+    {
+      "e1": "Coréia do Sul",
+      "g1": 2,
+      "f1": "kr",
+      "e2": "República Tcheca",
       "g2": 1,
-      "f2": "gb-eng"
+      "f2": "cz"
+    },
+    {
+      "e1": "Canadá",
+      "g1": 1,
+      "f1": "ca",
+      "e2": "Bósnia e Herzegovina",
+      "g2": 1,
+      "f2": "ba"
+    },
+    {
+      "e1": "EUA",
+      "g1": 4,
+      "f1": "us",
+      "e2": "Paraguai",
+      "g2": 1,
+      "f2": "py"
+    },
+    {
+      "e1": "Catar",
+      "g1": 1,
+      "f1": "qa",
+      "e2": "Suiça",
+      "g2": 1,
+      "f2": "ch"
     },
     {
       "e1": "Brasil",
-      "g1": 2,
+      "g1": 1,
       "f1": "br",
-      "e2": "Argentina",
+      "e2": "Marrocos",
+      "g2": 1,
+      "f2": "ma"
+    },
+    {
+      "e1": "Haiti",
+      "g1": 0,
+      "f1": "ht",
+      "e2": "Escócia",
+      "g2": 1,
+      "f2": "gb-sct"
+    },
+    {
+      "e1": "Austrália",
+      "g1": 2,
+      "f1": "au",
+      "e2": "Turquia",
+      "g2": 0,
+      "f2": "tr"
+    },
+    {
+      "e1": "Alemanha",
+      "g1": 7,
+      "f1": "de",
+      "e2": "Curaçao",
+      "g2": 1,
+      "f2": "cw"
+    },
+    {
+      "e1": "Holanda",
+      "g1": 2,
+      "f1": "nl",
+      "e2": "Japão",
       "g2": 2,
-      "f2": "ar"
+      "f2": "jp"
+    },
+    {
+      "e1": "Costa do Marfim",
+      "g1": 1,
+      "f1": "ci",
+      "e2": "Equador",
+      "g2": 0,
+      "f2": "ec"
+    },
+    {
+      "e1": "Suécia",
+      "g1": 5,
+      "f1": "se",
+      "e2": "Tunísia",
+      "g2": 1,
+      "f2": "tn"
+    },
+    {
+      "e1": "Espanha",
+      "g1": 0,
+      "f1": "es",
+      "e2": "Cabo Verde",
+      "g2": 0,
+      "f2": "cv"
+    },
+    {
+      "e1": "Bélgica",
+      "g1": 1,
+      "f1": "be",
+      "e2": "Egito",
+      "g2": 1,
+      "f2": "eg"
+    },
+    {
+      "e1": "Arábia Saudita",
+      "g1": 1,
+      "f1": "sa",
+      "e2": "Uruguai",
+      "g2": 1,
+      "f2": "uy"
+    },
+    {
+      "e1": "Irã",
+      "g1": 2,
+      "f1": "ir",
+      "e2": "Nova Zelândia",
+      "g2": 2,
+      "f2": "nz"
     },
     {
       "e1": "França",
-      "g1": 0,
+      "g1": 3,
       "f1": "fr",
-      "e2": "Portugal",
+      "e2": "Senegal",
       "g2": 1,
-      "f2": "pt"
+      "f2": "sn"
+    },
+    {
+      "e1": "Iraque",
+      "g1": 1,
+      "f1": "iq",
+      "e2": "Noruega",
+      "g2": 4,
+      "f2": "no"
+    },
+    {
+      "e1": "Argentina",
+      "g1": 3,
+      "f1": "ar",
+      "e2": "Argélia",
+      "g2": 0,
+      "f2": "dz"
+    },
+    {
+      "e1": "Áustria",
+      "g1": 3,
+      "f1": "at",
+      "e2": "Jordânia",
+      "g2": 1,
+      "f2": "jo"
+    },
+    {
+      "e1": "Portugal",
+      "g1": 1,
+      "f1": "pt",
+      "e2": "Congo",
+      "g2": 1,
+      "f2": "cg"
     }
   ]
 }
