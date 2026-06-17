@@ -104,10 +104,6 @@ function renderRodadas(dados) {
       btn.classList.add("bloqueada");
       btn.disabled = true;
       btn.title = "Rodada ainda sem placares";
-      const lock = document.createElement("span");
-      lock.className = "cadeado";
-      lock.textContent = "🔒";
-      btn.appendChild(lock);
     } else {
       btn.addEventListener("click", () => {
         document.querySelectorAll(".aba").forEach((b) => b.classList.remove("ativa"));
