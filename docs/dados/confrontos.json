@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "18/06/2026 15:01",
+  "atualizado_em": "18/06/2026 18:00",
   "rodadas": [
     {
       "nome": "Primeira Rodada",
@@ -210,6 +210,14 @@
           "e2": "África do Sul",
           "g2": 1,
           "f2": "za"
+        },
+        {
+          "e1": "Suiça",
+          "g1": 4,
+          "f1": "ch",
+          "e2": "Bósnia e Herzegovina",
+          "g2": 1,
+          "f2": "ba"
         }
       ]
     },
