@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "18/06/2026 09:11",
+  "atualizado_em": "18/06/2026 15:01",
   "tabela": [
     {
       "nome": "Camile",
@@ -111,15 +111,27 @@
     },
     {
       "nome": "Wagner",
-      "pontos": 3,
-      "jogos": 3,
+      "pontos": 4,
+      "jogos": 4,
       "v": 1,
-      "e": 0,
+      "e": 1,
       "d": 2,
-      "gp": 3,
-      "gc": 4,
+      "gp": 4,
+      "gc": 5,
       "sg": -1,
       "pos": 10
+    },
+    {
+      "nome": "Eunice",
+      "pontos": 3,
+      "jogos": 4,
+      "v": 0,
+      "e": 3,
+      "d": 1,
+      "gp": 5,
+      "gc": 6,
+      "sg": -1,
+      "pos": 11
     },
     {
       "nome": "Luciene",
@@ -131,18 +143,6 @@
       "gp": 3,
       "gc": 6,
       "sg": -3,
-      "pos": 11
-    },
-    {
-      "nome": "Eunice",
-      "pontos": 2,
-      "jogos": 3,
-      "v": 0,
-      "e": 2,
-      "d": 1,
-      "gp": 4,
-      "gc": 5,
-      "sg": -1,
       "pos": 12
     },
     {

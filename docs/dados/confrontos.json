@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "18/06/2026 09:11",
+  "atualizado_em": "18/06/2026 15:01",
   "rodadas": [
     {
       "nome": "Primeira Rodada",
@@ -201,8 +201,17 @@
     },
     {
       "nome": "Segunda Rodada",
-      "desbloqueada": false,
-      "confrontos": []
+      "desbloqueada": true,
+      "confrontos": [
+        {
+          "e1": "República Tcheca",
+          "g1": 1,
+          "f1": "cz",
+          "e2": "África do Sul",
+          "g2": 1,
+          "f2": "za"
+        }
+      ]
     },
     {
       "nome": "Terceira Rodada",
