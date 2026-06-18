@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "17/06/2026 19:41",
+  "atualizado_em": "17/06/2026 22:52",
   "rodadas": [
     {
       "nome": "Primeira Rodada",
@@ -180,6 +180,14 @@
           "e2": "Croácia",
           "g2": 2,
           "f2": "hr"
+        },
+        {
+          "e1": "Gana",
+          "g1": 1,
+          "f1": "gh",
+          "e2": "Panamá",
+          "g2": 0,
+          "f2": "pa"
         }
       ]
     },

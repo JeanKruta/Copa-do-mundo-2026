@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "17/06/2026 19:41",
+  "atualizado_em": "17/06/2026 22:52",
   "tabela": [
     {
       "nome": "Camile",
@@ -50,19 +50,19 @@
       "pos": 4
     },
     {
-      "nome": "Adriana",
+      "nome": "Roberto",
       "pontos": 5,
       "jogos": 3,
       "v": 1,
       "e": 2,
       "d": 0,
-      "gp": 3,
-      "gc": 2,
+      "gp": 4,
+      "gc": 3,
       "sg": 1,
       "pos": 5
     },
     {
-      "nome": "Jean",
+      "nome": "Adriana",
       "pontos": 5,
       "jogos": 3,
       "v": 1,
@@ -74,15 +74,15 @@
       "pos": 6
     },
     {
-      "nome": "Marcello",
-      "pontos": 4,
-      "jogos": 2,
+      "nome": "Jean",
+      "pontos": 5,
+      "jogos": 3,
       "v": 1,
-      "e": 1,
+      "e": 2,
       "d": 0,
-      "gp": 5,
+      "gp": 3,
       "gc": 2,
-      "sg": 3,
+      "sg": 1,
       "pos": 7
     },
     {
@@ -98,6 +98,18 @@
       "pos": 8
     },
     {
+      "nome": "Marcello",
+      "pontos": 4,
+      "jogos": 3,
+      "v": 1,
+      "e": 1,
+      "d": 1,
+      "gp": 5,
+      "gc": 3,
+      "sg": 2,
+      "pos": 9
+    },
+    {
       "nome": "Wagner",
       "pontos": 3,
       "jogos": 3,
@@ -107,7 +119,7 @@
       "gp": 3,
       "gc": 4,
       "sg": -1,
-      "pos": 9
+      "pos": 10
     },
     {
       "nome": "Luciene",
@@ -119,18 +131,6 @@
       "gp": 3,
       "gc": 6,
       "sg": -3,
-      "pos": 10
-    },
-    {
-      "nome": "Roberto",
-      "pontos": 2,
-      "jogos": 2,
-      "v": 0,
-      "e": 2,
-      "d": 0,
-      "gp": 3,
-      "gc": 3,
-      "sg": 0,
       "pos": 11
     },
     {
