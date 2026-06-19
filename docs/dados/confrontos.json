@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "18/06/2026 18:00",
+  "atualizado_em": "18/06/2026 22:11",
   "rodadas": [
     {
       "nome": "Primeira Rodada",
@@ -218,6 +218,14 @@
           "e2": "Bósnia e Herzegovina",
           "g2": 1,
           "f2": "ba"
+        },
+        {
+          "e1": "Canadá",
+          "g1": 6,
+          "f1": "ca",
+          "e2": "Catar",
+          "g2": 0,
+          "f2": "qa"
         }
       ]
     },
