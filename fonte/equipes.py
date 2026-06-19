@@ -29,7 +29,7 @@ equipes = [
     },
     {
         "nome": "Andrey",
-        "paises": ["Nova Zelândia", "Senegal", "Bélgica"]
+        "paises": ["Escócia", "Senegal", "Bélgica"]
     },
     {
         "nome": "Marcello",

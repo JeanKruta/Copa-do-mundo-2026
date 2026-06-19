@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "19/06/2026 18:45",
+  "atualizado_em": "19/06/2026 19:22",
   "tabela": [
     {
       "nome": "Guinho",
@@ -134,6 +134,18 @@
       "pos": 11
     },
     {
+      "nome": "Andrey",
+      "pontos": 4,
+      "jogos": 3,
+      "v": 1,
+      "e": 1,
+      "d": 1,
+      "gp": 3,
+      "gc": 4,
+      "sg": -1,
+      "pos": 12
+    },
+    {
       "nome": "Eunice",
       "pontos": 3,
       "jogos": 4,
@@ -143,18 +155,6 @@
       "gp": 5,
       "gc": 6,
       "sg": -1,
-      "pos": 12
-    },
-    {
-      "nome": "Andrey",
-      "pontos": 2,
-      "jogos": 3,
-      "v": 0,
-      "e": 2,
-      "d": 1,
-      "gp": 4,
-      "gc": 6,
-      "sg": -2,
       "pos": 13
     },
     {
