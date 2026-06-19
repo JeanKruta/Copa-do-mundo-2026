@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "18/06/2026 22:11",
+  "atualizado_em": "19/06/2026 00:03",
   "rodadas": [
     {
       "nome": "Primeira Rodada",
@@ -226,6 +226,14 @@
           "e2": "Catar",
           "g2": 0,
           "f2": "qa"
+        },
+        {
+          "e1": "México",
+          "g1": 1,
+          "f1": "mx",
+          "e2": "Coréia do Sul",
+          "g2": 0,
+          "f2": "kr"
         }
       ]
     },
