@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "19/06/2026 00:03",
+  "atualizado_em": "19/06/2026 18:45",
   "rodadas": [
     {
       "nome": "Primeira Rodada",
@@ -234,6 +234,14 @@
           "e2": "Coréia do Sul",
           "g2": 0,
           "f2": "kr"
+        },
+        {
+          "e1": "EUA",
+          "g1": 2,
+          "f1": "us",
+          "e2": "Austrália",
+          "g2": 0,
+          "f2": "au"
         }
       ]
     },
