@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "20/06/2026 00:06",
+  "atualizado_em": "20/06/2026 10:28",
   "tabela": [
     {
       "nome": "Guinho",
@@ -88,13 +88,13 @@
     {
       "nome": "Luciene",
       "pontos": 6,
-      "jogos": 4,
+      "jogos": 5,
       "v": 2,
       "e": 0,
-      "d": 2,
+      "d": 3,
       "gp": 4,
-      "gc": 6,
-      "sg": -2,
+      "gc": 7,
+      "sg": -3,
       "pos": 8
     },
     {
@@ -159,14 +159,14 @@
     },
     {
       "nome": "Mônica",
-      "pontos": 0,
-      "jogos": 3,
-      "v": 0,
+      "pontos": 3,
+      "jogos": 4,
+      "v": 1,
       "e": 0,
       "d": 3,
-      "gp": 4,
+      "gp": 5,
       "gc": 13,
-      "sg": -9,
+      "sg": -8,
       "pos": 14
     }
   ]

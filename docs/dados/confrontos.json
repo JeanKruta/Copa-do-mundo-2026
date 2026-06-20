@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "20/06/2026 00:06",
+  "atualizado_em": "20/06/2026 10:28",
   "rodadas": [
     {
       "nome": "Primeira Rodada",
@@ -258,6 +258,14 @@
           "e2": "Haiti",
           "g2": 0,
           "f2": "ht"
+        },
+        {
+          "e1": "Turquia",
+          "g1": 0,
+          "f1": "tr",
+          "e2": "Paraguai",
+          "g2": 1,
+          "f2": "py"
         }
       ]
     },
