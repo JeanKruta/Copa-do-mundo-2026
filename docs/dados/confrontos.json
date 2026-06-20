@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "19/06/2026 19:22",
+  "atualizado_em": "20/06/2026 00:06",
   "rodadas": [
     {
       "nome": "Primeira Rodada",
@@ -242,6 +242,22 @@
           "e2": "Austrália",
           "g2": 0,
           "f2": "au"
+        },
+        {
+          "e1": "Escócia",
+          "g1": 0,
+          "f1": "gb-sct",
+          "e2": "Marrocos",
+          "g2": 1,
+          "f2": "ma"
+        },
+        {
+          "e1": "Brasil",
+          "g1": 3,
+          "f1": "br",
+          "e2": "Haiti",
+          "g2": 0,
+          "f2": "ht"
         }
       ]
     },
