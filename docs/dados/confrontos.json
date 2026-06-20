@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "20/06/2026 10:28",
+  "atualizado_em": "20/06/2026 19:11",
   "rodadas": [
     {
       "nome": "Primeira Rodada",
@@ -266,6 +266,22 @@
           "e2": "Paraguai",
           "g2": 1,
           "f2": "py"
+        },
+        {
+          "e1": "Holanda",
+          "g1": 5,
+          "f1": "nl",
+          "e2": "Suécia",
+          "g2": 1,
+          "f2": "se"
+        },
+        {
+          "e1": "Alemanha",
+          "g1": 2,
+          "f1": "de",
+          "e2": "Costa do Marfim",
+          "g2": 1,
+          "f2": "ci"
         }
       ]
     },
