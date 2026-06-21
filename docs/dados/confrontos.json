@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "20/06/2026 19:11",
+  "atualizado_em": "21/06/2026 12:22",
   "rodadas": [
     {
       "nome": "Primeira Rodada",
@@ -282,6 +282,22 @@
           "e2": "Costa do Marfim",
           "g2": 1,
           "f2": "ci"
+        },
+        {
+          "e1": "Equador",
+          "g1": 0,
+          "f1": "ec",
+          "e2": "Curaçao",
+          "g2": 0,
+          "f2": "cw"
+        },
+        {
+          "e1": "Tunísia",
+          "g1": 0,
+          "f1": "tn",
+          "e2": "Japão",
+          "g2": 4,
+          "f2": "jp"
         }
       ]
     },

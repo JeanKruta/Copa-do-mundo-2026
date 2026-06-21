@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "20/06/2026 19:11",
+  "atualizado_em": "21/06/2026 12:22",
   "tabela": [
     {
       "nome": "Guinho",
@@ -50,6 +50,18 @@
       "pos": 4
     },
     {
+      "nome": "Marcello",
+      "pontos": 7,
+      "jogos": 4,
+      "v": 2,
+      "e": 1,
+      "d": 1,
+      "gp": 9,
+      "gc": 3,
+      "sg": 6,
+      "pos": 5
+    },
+    {
       "nome": "Roberta",
       "pontos": 7,
       "jogos": 3,
@@ -59,7 +71,7 @@
       "gp": 8,
       "gc": 4,
       "sg": 4,
-      "pos": 5
+      "pos": 6
     },
     {
       "nome": "Yan",
@@ -71,7 +83,7 @@
       "gp": 9,
       "gc": 7,
       "sg": 2,
-      "pos": 6
+      "pos": 7
     },
     {
       "nome": "Camile",
@@ -83,7 +95,7 @@
       "gp": 9,
       "gc": 9,
       "sg": 0,
-      "pos": 7
+      "pos": 8
     },
     {
       "nome": "Eunice",
@@ -95,7 +107,7 @@
       "gp": 10,
       "gc": 7,
       "sg": 3,
-      "pos": 8
+      "pos": 9
     },
     {
       "nome": "Luciene",
@@ -107,7 +119,19 @@
       "gp": 4,
       "gc": 7,
       "sg": -3,
-      "pos": 9
+      "pos": 10
+    },
+    {
+      "nome": "Wagner",
+      "pontos": 5,
+      "jogos": 5,
+      "v": 1,
+      "e": 2,
+      "d": 2,
+      "gp": 4,
+      "gc": 5,
+      "sg": -1,
+      "pos": 11
     },
     {
       "nome": "Adriana",
@@ -119,30 +143,6 @@
       "gp": 3,
       "gc": 9,
       "sg": -6,
-      "pos": 10
-    },
-    {
-      "nome": "Marcello",
-      "pontos": 4,
-      "jogos": 3,
-      "v": 1,
-      "e": 1,
-      "d": 1,
-      "gp": 5,
-      "gc": 3,
-      "sg": 2,
-      "pos": 11
-    },
-    {
-      "nome": "Wagner",
-      "pontos": 4,
-      "jogos": 4,
-      "v": 1,
-      "e": 1,
-      "d": 2,
-      "gp": 4,
-      "gc": 5,
-      "sg": -1,
       "pos": 12
     },
     {
@@ -160,13 +160,13 @@
     {
       "nome": "Mônica",
       "pontos": 3,
-      "jogos": 4,
+      "jogos": 5,
       "v": 1,
       "e": 0,
-      "d": 3,
+      "d": 4,
       "gp": 5,
-      "gc": 13,
-      "sg": -8,
+      "gc": 17,
+      "sg": -12,
       "pos": 14
     }
   ]
