@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "21/06/2026 12:22",
+  "atualizado_em": "21/06/2026 15:37",
   "rodadas": [
     {
       "nome": "Primeira Rodada",
@@ -298,6 +298,14 @@
           "e2": "Japão",
           "g2": 4,
           "f2": "jp"
+        },
+        {
+          "e1": "Espanha",
+          "g1": 4,
+          "f1": "es",
+          "e2": "Arábia Saudita",
+          "g2": 0,
+          "f2": "sa"
         }
       ]
     },
