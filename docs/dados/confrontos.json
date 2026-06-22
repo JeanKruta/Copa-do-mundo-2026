@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "21/06/2026 15:37",
+  "atualizado_em": "21/06/2026 21:59",
   "rodadas": [
     {
       "nome": "Primeira Rodada",
@@ -306,6 +306,22 @@
           "e2": "Arábia Saudita",
           "g2": 0,
           "f2": "sa"
+        },
+        {
+          "e1": "Bélgica",
+          "g1": 0,
+          "f1": "be",
+          "e2": "Irã",
+          "g2": 0,
+          "f2": "ir"
+        },
+        {
+          "e1": "Uruguai",
+          "g1": 2,
+          "f1": "uy",
+          "e2": "Cabo Verde",
+          "g2": 2,
+          "f2": "cv"
         }
       ]
     },
