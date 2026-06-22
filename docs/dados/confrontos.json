@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "21/06/2026 21:59",
+  "atualizado_em": "22/06/2026 00:01",
   "rodadas": [
     {
       "nome": "Primeira Rodada",
@@ -322,6 +322,14 @@
           "e2": "Cabo Verde",
           "g2": 2,
           "f2": "cv"
+        },
+        {
+          "e1": "Nova Zelândia",
+          "g1": 1,
+          "f1": "nz",
+          "e2": "Egito",
+          "g2": 3,
+          "f2": "eg"
         }
       ]
     },
