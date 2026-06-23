@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "22/06/2026 22:00",
+  "atualizado_em": "22/06/2026 23:00",
   "rodadas": [
     {
       "nome": "Primeira Rodada",
@@ -346,6 +346,14 @@
           "e2": "Iraque",
           "g2": 0,
           "f2": "iq"
+        },
+        {
+          "e1": "Noruega",
+          "g1": 3,
+          "f1": "no",
+          "e2": "Senegal",
+          "g2": 2,
+          "f2": "sn"
         }
       ]
     },
