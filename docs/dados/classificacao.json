@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "22/06/2026 00:01",
+  "atualizado_em": "22/06/2026 22:00",
   "tabela": [
     {
       "nome": "Guinho",
@@ -14,6 +14,18 @@
       "pos": 1
     },
     {
+      "nome": "Marcello",
+      "pontos": 10,
+      "jogos": 5,
+      "v": 3,
+      "e": 1,
+      "d": 1,
+      "gp": 11,
+      "gc": 3,
+      "sg": 8,
+      "pos": 2
+    },
+    {
       "nome": "Eunice",
       "pontos": 9,
       "jogos": 6,
@@ -23,7 +35,7 @@
       "gp": 13,
       "gc": 8,
       "sg": 5,
-      "pos": 2
+      "pos": 3
     },
     {
       "nome": "Fabinho",
@@ -35,7 +47,7 @@
       "gp": 9,
       "gc": 4,
       "sg": 5,
-      "pos": 3
+      "pos": 4
     },
     {
       "nome": "Roberto",
@@ -47,7 +59,19 @@
       "gp": 7,
       "gc": 3,
       "sg": 4,
-      "pos": 4
+      "pos": 5
+    },
+    {
+      "nome": "Wagner",
+      "pontos": 8,
+      "jogos": 6,
+      "v": 2,
+      "e": 2,
+      "d": 2,
+      "gp": 7,
+      "gc": 5,
+      "sg": 2,
+      "pos": 6
     },
     {
       "nome": "Camile",
@@ -59,7 +83,7 @@
       "gp": 11,
       "gc": 11,
       "sg": 0,
-      "pos": 5
+      "pos": 7
     },
     {
       "nome": "Jean",
@@ -71,7 +95,7 @@
       "gp": 8,
       "gc": 9,
       "sg": -1,
-      "pos": 6
+      "pos": 8
     },
     {
       "nome": "Adriana",
@@ -83,30 +107,6 @@
       "gp": 7,
       "gc": 9,
       "sg": -2,
-      "pos": 7
-    },
-    {
-      "nome": "Marcello",
-      "pontos": 7,
-      "jogos": 4,
-      "v": 2,
-      "e": 1,
-      "d": 1,
-      "gp": 9,
-      "gc": 3,
-      "sg": 6,
-      "pos": 8
-    },
-    {
-      "nome": "Roberta",
-      "pontos": 7,
-      "jogos": 3,
-      "v": 2,
-      "e": 1,
-      "d": 0,
-      "gp": 8,
-      "gc": 4,
-      "sg": 4,
       "pos": 9
     },
     {
@@ -122,27 +122,27 @@
       "pos": 10
     },
     {
-      "nome": "Luciene",
-      "pontos": 6,
-      "jogos": 5,
+      "nome": "Roberta",
+      "pontos": 7,
+      "jogos": 4,
       "v": 2,
-      "e": 0,
-      "d": 3,
-      "gp": 4,
-      "gc": 7,
-      "sg": -3,
+      "e": 1,
+      "d": 1,
+      "gp": 8,
+      "gc": 6,
+      "sg": 2,
       "pos": 11
     },
     {
-      "nome": "Wagner",
-      "pontos": 5,
-      "jogos": 5,
-      "v": 1,
-      "e": 2,
-      "d": 2,
+      "nome": "Luciene",
+      "pontos": 6,
+      "jogos": 6,
+      "v": 2,
+      "e": 0,
+      "d": 4,
       "gp": 4,
-      "gc": 5,
-      "sg": -1,
+      "gc": 10,
+      "sg": -6,
       "pos": 12
     },
     {

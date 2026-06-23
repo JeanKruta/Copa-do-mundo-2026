@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "22/06/2026 00:01",
+  "atualizado_em": "22/06/2026 22:00",
   "rodadas": [
     {
       "nome": "Primeira Rodada",
@@ -330,6 +330,22 @@
           "e2": "Egito",
           "g2": 3,
           "f2": "eg"
+        },
+        {
+          "e1": "Argentina",
+          "g1": 2,
+          "f1": "ar",
+          "e2": "Áustria",
+          "g2": 0,
+          "f2": "at"
+        },
+        {
+          "e1": "França",
+          "g1": 3,
+          "f1": "fr",
+          "e2": "Iraque",
+          "g2": 0,
+          "f2": "iq"
         }
       ]
     },
