@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "22/06/2026 23:00",
+  "atualizado_em": "24/06/2026 01:08",
   "rodadas": [
     {
       "nome": "Primeira Rodada",
@@ -354,6 +354,46 @@
           "e2": "Senegal",
           "g2": 2,
           "f2": "sn"
+        },
+        {
+          "e1": "Jordânia",
+          "g1": 1,
+          "f1": "jo",
+          "e2": "Argélia",
+          "g2": 2,
+          "f2": "dz"
+        },
+        {
+          "e1": "Portugal",
+          "g1": 5,
+          "f1": "pt",
+          "e2": "Uzbequistão",
+          "g2": 0,
+          "f2": "uz"
+        },
+        {
+          "e1": "Inglaterra",
+          "g1": 0,
+          "f1": "gb-eng",
+          "e2": "Gana",
+          "g2": 0,
+          "f2": "gh"
+        },
+        {
+          "e1": "Panamá",
+          "g1": 0,
+          "f1": "pa",
+          "e2": "Croácia",
+          "g2": 1,
+          "f2": "hr"
+        },
+        {
+          "e1": "Colômbia",
+          "g1": 1,
+          "f1": "co",
+          "e2": "Congo",
+          "g2": 0,
+          "f2": "cg"
         }
       ]
     },
