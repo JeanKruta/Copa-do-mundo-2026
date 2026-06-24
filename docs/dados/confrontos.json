@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "24/06/2026 01:08",
+  "atualizado_em": "24/06/2026 18:40",
   "rodadas": [
     {
       "nome": "Primeira Rodada",
@@ -399,8 +399,25 @@
     },
     {
       "nome": "Terceira Rodada",
-      "desbloqueada": false,
-      "confrontos": []
+      "desbloqueada": true,
+      "confrontos": [
+        {
+          "e1": "Suiça",
+          "g1": 2,
+          "f1": "ch",
+          "e2": "Canadá",
+          "g2": 1,
+          "f2": "ca"
+        },
+        {
+          "e1": "Bósnia e Herzegovina",
+          "g1": 3,
+          "f1": "ba",
+          "e2": "Catar",
+          "g2": 1,
+          "f2": "qa"
+        }
+      ]
     },
     {
       "nome": "Dezesseis Avos",
