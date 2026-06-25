@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "24/06/2026 18:40",
+  "atualizado_em": "25/06/2026 19:35",
   "rodadas": [
     {
       "nome": "Primeira Rodada",
@@ -416,6 +416,54 @@
           "e2": "Catar",
           "g2": 1,
           "f2": "qa"
+        },
+        {
+          "e1": "Marrocos",
+          "g1": 4,
+          "f1": "ma",
+          "e2": "Haiti",
+          "g2": 2,
+          "f2": "ht"
+        },
+        {
+          "e1": "Escócia",
+          "g1": 0,
+          "f1": "gb-sct",
+          "e2": "Brasil",
+          "g2": 3,
+          "f2": "br"
+        },
+        {
+          "e1": "África do Sul",
+          "g1": 1,
+          "f1": "za",
+          "e2": "Coréia do Sul",
+          "g2": 0,
+          "f2": "kr"
+        },
+        {
+          "e1": "República Tcheca",
+          "g1": 0,
+          "f1": "cz",
+          "e2": "México",
+          "g2": 3,
+          "f2": "mx"
+        },
+        {
+          "e1": "Curaçao",
+          "g1": 0,
+          "f1": "cw",
+          "e2": "Costa do Marfim",
+          "g2": 2,
+          "f2": "ci"
+        },
+        {
+          "e1": "Equador",
+          "g1": 2,
+          "f1": "ec",
+          "e2": "Alemanha",
+          "g2": 1,
+          "f2": "de"
         }
       ]
     },
