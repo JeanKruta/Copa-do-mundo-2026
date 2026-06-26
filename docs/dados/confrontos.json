@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "25/06/2026 22:47",
+  "atualizado_em": "26/06/2026 17:17",
   "rodadas": [
     {
       "nome": "Primeira Rodada",
@@ -480,6 +480,22 @@
           "e2": "Suécia",
           "g2": 1,
           "f2": "se"
+        },
+        {
+          "e1": "Turquia",
+          "g1": 3,
+          "f1": "tr",
+          "e2": "EUA",
+          "g2": 2,
+          "f2": "us"
+        },
+        {
+          "e1": "Paraguai",
+          "g1": 0,
+          "f1": "py",
+          "e2": "Austrália",
+          "g2": 0,
+          "f2": "au"
         }
       ]
     },

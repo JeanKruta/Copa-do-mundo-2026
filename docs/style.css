@@ -175,6 +175,113 @@ td.pts { font-weight: 700; color: var(--verde-escuro); }
   gap: 8px;
 }
 
+/* ---- Chaveamento (mata-mata) ---- */
+.bracket-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 4px 2px 10px;
+  margin: 0 -8px;
+}
+
+.bracket {
+  display: flex;
+  align-items: stretch;
+  gap: 18px;
+  min-width: max-content;
+  padding: 0 8px;
+}
+
+.bracket-side {
+  display: flex;
+  gap: 14px;
+}
+
+.bracket-col {
+  display: flex;
+  flex-direction: column;
+  min-width: 150px;
+}
+
+.bracket-col-titulo {
+  text-align: center;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--texto-suave);
+  margin-bottom: 6px;
+}
+
+.bracket-col-items {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 8px;
+}
+
+.bm {
+  background: #f6faf7;
+  border: 1px solid var(--linha);
+  border-radius: 8px;
+  padding: 4px 6px;
+  font-size: 0.78rem;
+  width: 150px;
+  box-sizing: border-box;
+}
+
+.bm-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 2px;
+  border-bottom: 1px solid var(--linha);
+  color: var(--texto-suave);
+}
+
+.bm-row:last-child { border-bottom: none; }
+
+.bm-row img {
+  width: 18px;
+  height: auto;
+  border-radius: 2px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+
+.bm-team {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.bm-score {
+  font-weight: 700;
+  min-width: 16px;
+  text-align: right;
+}
+
+.bm-row.bm-vencedor {
+  color: var(--verde-escuro);
+  font-weight: 700;
+}
+
+.bm-vazio .bm-team,
+.bm-vazio .bm-score {
+  color: #b6c2bb;
+  font-weight: 400;
+}
+
+.bracket-side.bracket-center .bm {
+  background: #fff8e1;
+  border-color: var(--ouro);
+}
+
+.bracket-side.bracket-center .bracket-col-titulo {
+  color: var(--verde-escuro);
+}
+
 .match {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
