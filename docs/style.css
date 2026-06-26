@@ -268,9 +268,21 @@ td.pts { font-weight: 700; color: var(--verde-escuro); }
 }
 
 .bm-vazio .bm-team,
-.bm-vazio .bm-score {
+.bm-vazio .bm-score,
+.bm-tbd {
   color: #b6c2bb;
   font-weight: 400;
+}
+
+.bm-sem-flag {
+  display: inline-block;
+  width: 18px;
+  height: 13px;
+  flex-shrink: 0;
+}
+
+.bm-agendado .bm-row {
+  color: var(--texto);
 }
 
 .bracket-side.bracket-center .bm {

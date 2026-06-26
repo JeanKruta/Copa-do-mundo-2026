@@ -86,42 +86,62 @@ function preencher(confrontos, tamanho) {
   return out;
 }
 
+function bmLinha(nome, codigoBandeira, placar, ehVencedor) {
+  const row = document.createElement("div");
+  row.className = "bm-row";
+
+  if (codigoBandeira) {
+    row.appendChild(bandeira(codigoBandeira, nome || ""));
+  } else {
+    const semFlag = document.createElement("span");
+    semFlag.className = "bm-sem-flag";
+    row.appendChild(semFlag);
+  }
+
+  const nomeEl = document.createElement("span");
+  nomeEl.className = "bm-team";
+  if (nome) {
+    nomeEl.textContent = nome;
+  } else {
+    nomeEl.textContent = "?";
+    nomeEl.classList.add("bm-tbd");
+  }
+  row.appendChild(nomeEl);
+
+  const scoreEl = document.createElement("span");
+  scoreEl.className = "bm-score";
+  if (placar === null || placar === undefined) {
+    scoreEl.textContent = "–";
+    scoreEl.classList.add("bm-tbd");
+  } else {
+    scoreEl.textContent = placar;
+  }
+  row.appendChild(scoreEl);
+
+  if (ehVencedor) row.classList.add("bm-vencedor");
+  return row;
+}
+
 function bracketMatch(c) {
   const div = document.createElement("div");
   div.className = "bm";
+
   if (!c) {
     div.classList.add("bm-vazio");
-    div.innerHTML = `
-      <div class="bm-row"><span class="bm-team">?</span><span class="bm-score">–</span></div>
-      <div class="bm-row"><span class="bm-team">?</span><span class="bm-score">–</span></div>
-    `;
+    div.append(bmLinha(null, null, null, false), bmLinha(null, null, null, false));
     return div;
   }
 
-  const venceu1 = c.g1 > c.g2;
-  const venceu2 = c.g2 > c.g1;
+  const temPlacar = c.g1 !== null && c.g1 !== undefined && c.g2 !== null && c.g2 !== undefined;
+  const venceu1 = temPlacar && c.g1 > c.g2;
+  const venceu2 = temPlacar && c.g2 > c.g1;
 
-  const row1 = document.createElement("div");
-  row1.className = "bm-row" + (venceu1 ? " bm-vencedor" : "");
-  const nome1 = document.createElement("span");
-  nome1.className = "bm-team";
-  nome1.textContent = c.e1;
-  const s1 = document.createElement("span");
-  s1.className = "bm-score";
-  s1.textContent = c.g1;
-  row1.append(bandeira(c.f1, c.e1), nome1, s1);
+  if (!temPlacar) div.classList.add("bm-agendado");
 
-  const row2 = document.createElement("div");
-  row2.className = "bm-row" + (venceu2 ? " bm-vencedor" : "");
-  const nome2 = document.createElement("span");
-  nome2.className = "bm-team";
-  nome2.textContent = c.e2;
-  const s2 = document.createElement("span");
-  s2.className = "bm-score";
-  s2.textContent = c.g2;
-  row2.append(bandeira(c.f2, c.e2), nome2, s2);
-
-  div.append(row1, row2);
+  div.append(
+    bmLinha(c.e1, c.f1, temPlacar ? c.g1 : null, venceu1),
+    bmLinha(c.e2, c.f2, temPlacar ? c.g2 : null, venceu2),
+  );
   return div;
 }
 

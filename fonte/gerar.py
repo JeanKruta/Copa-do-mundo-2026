@@ -171,14 +171,30 @@ def main():
     except Exception as e:  # arquivo aberto no Excel, corrompido, etc.
         erro(f"Não consegui abrir o Excel: {e}. Feche o arquivo no Excel e tente de novo.")
 
+    # Mata-mata: tamanho fixo de cada fase. Linhas em branco viram placeholders,
+    # times sem placar viram "agendado" (aparecem mas não pontuam).
+    TAMANHOS_KNOCKOUT = {
+        "Dezesseis Avos": 16,
+        "Oitavas": 8,
+        "Quartas": 4,
+        "Semis": 2,
+        "Final": 1,
+    }
+
     rodadas = []
     total = 0
     for nome_aba in wb.sheetnames:
         ws = wb[nome_aba]
+        eh_knockout = nome_aba in TAMANHOS_KNOCKOUT
+        tamanho = TAMANHOS_KNOCKOUT.get(nome_aba, 0)
         confrontos = []
+
         for i, row in enumerate(ws.iter_rows(values_only=True), start=1):
-            if row is None:
-                continue
+            if i == 1:
+                continue  # cabeçalho
+            if eh_knockout and len(confrontos) >= tamanho:
+                break  # ignora linhas extras além do tamanho da fase
+
             cels = list(row) + [None, None, None, None]
             e1 = ("" if cels[0] is None else str(cels[0])).strip()
             e2 = ("" if cels[2] is None else str(cels[2])).strip()
@@ -187,20 +203,31 @@ def main():
 
             # linha em branco
             if not e1 and not e2 and g1 is None and g2 is None:
+                if eh_knockout:
+                    confrontos.append(None)  # preserva a posição no chaveamento
                 continue
-            # cabeçalho ou jogo ainda sem placar -> ignora (não pontua, não aparece)
+
+            iso1 = iso_de(e1) if e1 else None
+            iso2 = iso_de(e2) if e2 else None
+            if e1 and not iso1:
+                erro(f"Aba '{nome_aba}', linha {i}: país sem bandeira '{e1}'. Adicione em PAIS_ISO (gerar.py) ou confira a grafia.")
+            if e2 and not iso2:
+                erro(f"Aba '{nome_aba}', linha {i}: país sem bandeira '{e2}'. Adicione em PAIS_ISO (gerar.py) ou confira a grafia.")
+
+            # jogo agendado (sem placar): só aparece nas abas de mata-mata
             if g1 is None or g2 is None:
+                if eh_knockout:
+                    confrontos.append({
+                        "e1": e1 or None, "g1": None, "f1": iso1,
+                        "e2": e2 or None, "g2": None, "f2": iso2,
+                    })
                 continue
+
+            # placar completo: valida e pontua
             if g1 < 0 or g2 < 0:
                 erro(f"Aba '{nome_aba}', linha {i}: placar não pode ser negativo.")
             if not e1 or not e2:
-                erro(f"Aba '{nome_aba}', linha {i}: faltou o nome de um país.")
-
-            iso1, iso2 = iso_de(e1), iso_de(e2)
-            if not iso1:
-                erro(f"Aba '{nome_aba}', linha {i}: país sem bandeira '{e1}'. Adicione em PAIS_ISO (gerar.py) ou confira a grafia.")
-            if not iso2:
-                erro(f"Aba '{nome_aba}', linha {i}: país sem bandeira '{e2}'. Adicione em PAIS_ISO (gerar.py) ou confira a grafia.")
+                erro(f"Aba '{nome_aba}', linha {i}: linha com placar mas sem nome de país.")
 
             dono1 = dono_por_iso.get(iso1)
             dono2 = dono_por_iso.get(iso2)
@@ -214,10 +241,19 @@ def main():
                 "e2": e2, "g2": g2, "f2": iso2,
             })
 
-        total += len(confrontos)
+        # Para o mata-mata, garante o tamanho fixo da fase (preenche com placeholders)
+        if eh_knockout:
+            while len(confrontos) < tamanho:
+                confrontos.append(None)
+
+        # Conta jogos com placar e marca a rodada como desbloqueada se houver algum
+        jogos_com_placar = sum(
+            1 for c in confrontos if c and c.get("g1") is not None and c.get("g2") is not None
+        )
+        total += jogos_com_placar
         rodadas.append({
             "nome": nome_aba,
-            "desbloqueada": len(confrontos) > 0,
+            "desbloqueada": jogos_com_placar > 0,
             "confrontos": confrontos,
         })
     wb.close()

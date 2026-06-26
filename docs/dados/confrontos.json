@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "26/06/2026 17:31",
+  "atualizado_em": "26/06/2026 17:40",
   "rodadas": [
     {
       "nome": "Primeira Rodada",
@@ -502,27 +502,133 @@
     {
       "nome": "Dezesseis Avos",
       "desbloqueada": false,
-      "confrontos": []
+      "confrontos": [
+        {
+          "e1": "África do Sul",
+          "g1": null,
+          "f1": "za",
+          "e2": "Canadá",
+          "g2": null,
+          "f2": "ca"
+        },
+        {
+          "e1": "Holanda",
+          "g1": null,
+          "f1": "nl",
+          "e2": "Marrocos",
+          "g2": null,
+          "f2": "ma"
+        },
+        {
+          "e1": "Alemanha",
+          "g1": null,
+          "f1": "de",
+          "e2": null,
+          "g2": null,
+          "f2": null
+        },
+        null,
+        null,
+        {
+          "e1": "EUA",
+          "g1": null,
+          "f1": "us",
+          "e2": "Bósnia e Herzegovina",
+          "g2": null,
+          "f2": "ba"
+        },
+        null,
+        null,
+        {
+          "e1": "Brasil",
+          "g1": null,
+          "f1": "br",
+          "e2": "Japão",
+          "g2": null,
+          "f2": "jp"
+        },
+        {
+          "e1": "Costa do Marfim",
+          "g1": null,
+          "f1": "ci",
+          "e2": null,
+          "g2": null,
+          "f2": null
+        },
+        {
+          "e1": "México",
+          "g1": null,
+          "f1": "mx",
+          "e2": null,
+          "g2": null,
+          "f2": null
+        },
+        null,
+        {
+          "e1": "Suiça",
+          "g1": null,
+          "f1": "ch",
+          "e2": null,
+          "g2": null,
+          "f2": null
+        },
+        null,
+        {
+          "e1": "Austrália",
+          "g1": null,
+          "f1": "au",
+          "e2": null,
+          "g2": null,
+          "f2": null
+        },
+        {
+          "e1": "Argentina",
+          "g1": null,
+          "f1": "ar",
+          "e2": null,
+          "g2": null,
+          "f2": null
+        }
+      ]
     },
     {
       "nome": "Oitavas",
       "desbloqueada": false,
-      "confrontos": []
+      "confrontos": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
     },
     {
       "nome": "Quartas",
       "desbloqueada": false,
-      "confrontos": []
+      "confrontos": [
+        null,
+        null,
+        null,
+        null
+      ]
     },
     {
       "nome": "Semis",
       "desbloqueada": false,
-      "confrontos": []
+      "confrontos": [
+        null,
+        null
+      ]
     },
     {
       "nome": "Final",
       "desbloqueada": false,
-      "confrontos": []
+      "confrontos": [
+        null
+      ]
     }
   ]
 }
