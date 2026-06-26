@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "25/06/2026 19:35",
+  "atualizado_em": "25/06/2026 22:47",
   "rodadas": [
     {
       "nome": "Primeira Rodada",
@@ -464,6 +464,22 @@
           "e2": "Alemanha",
           "g2": 1,
           "f2": "de"
+        },
+        {
+          "e1": "Tunísia",
+          "g1": 1,
+          "f1": "tn",
+          "e2": "Holanda",
+          "g2": 3,
+          "f2": "nl"
+        },
+        {
+          "e1": "Japão",
+          "g1": 1,
+          "f1": "jp",
+          "e2": "Suécia",
+          "g2": 1,
+          "f2": "se"
         }
       ]
     },
