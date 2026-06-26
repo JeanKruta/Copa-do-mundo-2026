@@ -206,24 +206,36 @@ function renderRodadas(dados) {
 
   const tabs = [];
   for (const r of grupo) {
-    tabs.push({ label: r.nome, desbloqueada: r.desbloqueada, mostrar: () => mostrarRodada(r) });
-  }
-  if (mata.length > 0) {
     tabs.push({
-      label: "Mata-mata",
-      desbloqueada: mata.some((r) => r.desbloqueada),
-      mostrar: () => mostrarMataMata(mata),
+      label: r.nome,
+      desbloqueada: r.desbloqueada,
+      temPlacar: r.desbloqueada,
+      mostrar: () => mostrarRodada(r),
     });
   }
+  let abaMata = null;
+  if (mata.length > 0) {
+    abaMata = {
+      label: "Mata-mata",
+      desbloqueada: true, // sempre aberta para visualizar o chaveamento
+      temPlacar: mata.some((r) => r.desbloqueada),
+      mostrar: () => mostrarMataMata(mata),
+    };
+    tabs.push(abaMata);
+  }
 
-  const temAlgum = tabs.some((t) => t.desbloqueada);
+  const temAlgum = tabs.some((t) => t.temPlacar);
   if (!temAlgum) {
     cont.innerHTML = `<p class="aviso">Nenhum placar cadastrado ainda.</p>`;
   }
 
-  // por padrão, mostra a última aba com placar
+  // default: Mata-mata se já tiver placar nele; senão, última fase de grupos com placar
   let selecionada = null;
-  for (const t of tabs) if (t.desbloqueada) selecionada = t;
+  if (abaMata && abaMata.temPlacar) {
+    selecionada = abaMata;
+  } else {
+    for (const t of tabs) if (t !== abaMata && t.temPlacar) selecionada = t;
+  }
 
   for (const t of tabs) {
     const btn = document.createElement("button");
