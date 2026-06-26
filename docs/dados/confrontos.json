@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "26/06/2026 17:40",
+  "atualizado_em": "26/06/2026 18:12",
   "rodadas": [
     {
       "nome": "Primeira Rodada",
@@ -496,6 +496,22 @@
           "e2": "Austrália",
           "g2": 0,
           "f2": "au"
+        },
+        {
+          "e1": "Noruega",
+          "g1": 1,
+          "f1": "no",
+          "e2": "França",
+          "g2": 4,
+          "f2": "fr"
+        },
+        {
+          "e1": "Senegal",
+          "g1": 5,
+          "f1": "sn",
+          "e2": "Iraque",
+          "g2": 0,
+          "f2": "iq"
         }
       ]
     },
@@ -551,9 +567,9 @@
           "e1": "Costa do Marfim",
           "g1": null,
           "f1": "ci",
-          "e2": null,
+          "e2": "Noruega",
           "g2": null,
-          "f2": null
+          "f2": "no"
         },
         {
           "e1": "México",
