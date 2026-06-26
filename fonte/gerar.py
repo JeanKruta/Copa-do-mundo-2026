@@ -15,6 +15,7 @@ docs/dados/classificacao.json e docs/dados/confrontos.json.
 """
 import json
 import os
+import re
 import sys
 import unicodedata
 from datetime import datetime, timezone, timedelta
@@ -88,7 +89,9 @@ PAIS_ISO = {
 }
 
 XLSX_PATH = os.path.join(BASE, "resultados.xlsx")
-SAIDA_DIR = os.path.join(BASE, "..", "docs", "dados")
+DOCS_DIR = os.path.join(BASE, "..", "docs")
+SAIDA_DIR = os.path.join(DOCS_DIR, "dados")
+INDEX_PATH = os.path.join(DOCS_DIR, "index.html")
 
 
 def normalizar(nome):
@@ -233,6 +236,17 @@ def main():
         json.dump({"atualizado_em": atualizado_em, "tabela": tabela}, f, ensure_ascii=False, indent=2)
     with open(os.path.join(SAIDA_DIR, "confrontos.json"), "w", encoding="utf-8") as f:
         json.dump({"atualizado_em": atualizado_em, "rodadas": rodadas}, f, ensure_ascii=False, indent=2)
+
+    # Cache-buster: atualiza ?v= no index.html para forçar o navegador a buscar
+    # a versão nova do JS/CSS sempre que publicarmos.
+    versao = datetime.now().strftime("%Y%m%d%H%M%S")
+    if os.path.exists(INDEX_PATH):
+        with open(INDEX_PATH, encoding="utf-8") as f:
+            html = f.read()
+        novo = re.sub(r'(app\.js|style\.css)\?v=\d+', rf'\1?v={versao}', html)
+        if novo != html:
+            with open(INDEX_PATH, "w", encoding="utf-8", newline="\n") as f:
+                f.write(novo)
 
     desbloqueadas = sum(1 for r in rodadas if r["desbloqueada"])
     print(f"OK: {total} confronto(s) em {desbloqueadas}/{len(rodadas)} rodada(s) com placar.")
