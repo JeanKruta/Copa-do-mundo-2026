@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "26/06/2026 18:12",
+  "atualizado_em": "27/06/2026 10:01",
   "tabela": [
     {
       "nome": "Guinho",
@@ -39,10 +39,10 @@
     },
     {
       "nome": "Jean",
-      "pontos": 14,
-      "jogos": 8,
+      "pontos": 15,
+      "jogos": 9,
       "v": 4,
-      "e": 2,
+      "e": 3,
       "d": 2,
       "gp": 12,
       "gc": 10,
@@ -51,22 +51,22 @@
     },
     {
       "nome": "Roberto",
-      "pontos": 13,
-      "jogos": 7,
+      "pontos": 14,
+      "jogos": 8,
       "v": 3,
-      "e": 4,
+      "e": 5,
       "d": 0,
-      "gp": 10,
-      "gc": 3,
+      "gp": 11,
+      "gc": 4,
       "sg": 7,
       "pos": 5
     },
     {
       "nome": "Fabinho",
-      "pontos": 12,
-      "jogos": 7,
+      "pontos": 13,
+      "jogos": 8,
       "v": 3,
-      "e": 3,
+      "e": 4,
       "d": 1,
       "gp": 16,
       "gc": 7,
@@ -75,13 +75,13 @@
     },
     {
       "nome": "Eunice",
-      "pontos": 12,
-      "jogos": 8,
+      "pontos": 13,
+      "jogos": 9,
       "v": 3,
-      "e": 3,
+      "e": 4,
       "d": 2,
-      "gp": 16,
-      "gc": 12,
+      "gp": 17,
+      "gc": 13,
       "sg": 4,
       "pos": 7
     },
@@ -110,16 +110,40 @@
       "pos": 9
     },
     {
+      "nome": "Andrey",
+      "pontos": 11,
+      "jogos": 9,
+      "v": 3,
+      "e": 2,
+      "d": 4,
+      "gp": 15,
+      "gc": 12,
+      "sg": 3,
+      "pos": 10
+    },
+    {
+      "nome": "Adriana",
+      "pontos": 11,
+      "jogos": 9,
+      "v": 3,
+      "e": 2,
+      "d": 4,
+      "gp": 9,
+      "gc": 13,
+      "sg": -4,
+      "pos": 11
+    },
+    {
       "nome": "Camile",
       "pontos": 10,
-      "jogos": 8,
+      "jogos": 9,
       "v": 2,
       "e": 4,
-      "d": 2,
+      "d": 3,
       "gp": 12,
-      "gc": 12,
-      "sg": 0,
-      "pos": 10
+      "gc": 13,
+      "sg": -1,
+      "pos": 12
     },
     {
       "nome": "Roberta",
@@ -131,30 +155,6 @@
       "gp": 8,
       "gc": 7,
       "sg": 1,
-      "pos": 11
-    },
-    {
-      "nome": "Andrey",
-      "pontos": 8,
-      "jogos": 8,
-      "v": 2,
-      "e": 2,
-      "d": 4,
-      "gp": 10,
-      "gc": 11,
-      "sg": -1,
-      "pos": 12
-    },
-    {
-      "nome": "Adriana",
-      "pontos": 8,
-      "jogos": 8,
-      "v": 2,
-      "e": 2,
-      "d": 4,
-      "gp": 8,
-      "gc": 13,
-      "sg": -5,
       "pos": 13
     },
     {

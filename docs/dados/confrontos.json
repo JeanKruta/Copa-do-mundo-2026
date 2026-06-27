@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "26/06/2026 18:12",
+  "atualizado_em": "27/06/2026 10:01",
   "rodadas": [
     {
       "nome": "Primeira Rodada",
@@ -512,6 +512,38 @@
           "e2": "Iraque",
           "g2": 0,
           "f2": "iq"
+        },
+        {
+          "e1": "Cabo Verde",
+          "g1": 0,
+          "f1": "cv",
+          "e2": "Arábia Saudita",
+          "g2": 0,
+          "f2": "sa"
+        },
+        {
+          "e1": "Uruguai",
+          "g1": 0,
+          "f1": "uy",
+          "e2": "Espanha",
+          "g2": 1,
+          "f2": "es"
+        },
+        {
+          "e1": "Nova Zelândia",
+          "g1": 1,
+          "f1": "nz",
+          "e2": "Bélgica",
+          "g2": 5,
+          "f2": "be"
+        },
+        {
+          "e1": "Egito",
+          "g1": 1,
+          "f1": "eg",
+          "e2": "Irã",
+          "g2": 1,
+          "f2": "ir"
         }
       ]
     },
@@ -539,12 +571,26 @@
           "e1": "Alemanha",
           "g1": null,
           "f1": "de",
+          "e2": "Paraguai",
+          "g2": null,
+          "f2": "py"
+        },
+        {
+          "e1": "França",
+          "g1": null,
+          "f1": "fr",
+          "e2": "Suécia",
+          "g2": null,
+          "f2": "se"
+        },
+        {
+          "e1": "Bélgica",
+          "g1": null,
+          "f1": "be",
           "e2": null,
           "g2": null,
           "f2": null
         },
-        null,
-        null,
         {
           "e1": "EUA",
           "g1": null,
@@ -553,7 +599,14 @@
           "g2": null,
           "f2": "ba"
         },
-        null,
+        {
+          "e1": "Espanha",
+          "g1": null,
+          "f1": "es",
+          "e2": null,
+          "g2": null,
+          "f2": null
+        },
         null,
         {
           "e1": "Brasil",
@@ -593,17 +646,17 @@
           "e1": "Austrália",
           "g1": null,
           "f1": "au",
-          "e2": null,
+          "e2": "Egito",
           "g2": null,
-          "f2": null
+          "f2": "eg"
         },
         {
           "e1": "Argentina",
           "g1": null,
           "f1": "ar",
-          "e2": null,
+          "e2": "Cabo Verde",
           "g2": null,
-          "f2": null
+          "f2": "cv"
         }
       ]
     },
