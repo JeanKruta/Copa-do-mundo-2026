@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "27/06/2026 10:01",
+  "atualizado_em": "27/06/2026 20:47",
   "rodadas": [
     {
       "nome": "Primeira Rodada",
@@ -544,6 +544,22 @@
           "e2": "Irã",
           "g2": 1,
           "f2": "ir"
+        },
+        {
+          "e1": "Panamá",
+          "g1": 0,
+          "f1": "pa",
+          "e2": "Inglaterra",
+          "g2": 2,
+          "f2": "gb-eng"
+        },
+        {
+          "e1": "Croácia",
+          "g1": 2,
+          "f1": "hr",
+          "e2": "Gana",
+          "g2": 1,
+          "f2": "gh"
         }
       ]
     },
