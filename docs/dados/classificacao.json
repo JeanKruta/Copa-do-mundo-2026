@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "27/06/2026 22:50",
+  "atualizado_em": "28/06/2026 11:41",
   "tabela": [
     {
       "nome": "Guinho",
@@ -38,6 +38,18 @@
       "pos": 3
     },
     {
+      "nome": "Roberta",
+      "pontos": 15,
+      "jogos": 9,
+      "v": 4,
+      "e": 3,
+      "d": 2,
+      "gp": 16,
+      "gc": 11,
+      "sg": 5,
+      "pos": 4
+    },
+    {
       "nome": "Jean",
       "pontos": 15,
       "jogos": 9,
@@ -47,7 +59,7 @@
       "gp": 12,
       "gc": 10,
       "sg": 2,
-      "pos": 4
+      "pos": 5
     },
     {
       "nome": "Fabinho",
@@ -59,7 +71,19 @@
       "gp": 16,
       "gc": 7,
       "sg": 9,
-      "pos": 5
+      "pos": 6
+    },
+    {
+      "nome": "Marcello",
+      "pontos": 14,
+      "jogos": 9,
+      "v": 4,
+      "e": 2,
+      "d": 3,
+      "gp": 15,
+      "gc": 8,
+      "sg": 7,
+      "pos": 7
     },
     {
       "nome": "Roberto",
@@ -71,19 +95,7 @@
       "gp": 12,
       "gc": 6,
       "sg": 6,
-      "pos": 6
-    },
-    {
-      "nome": "Roberta",
-      "pontos": 14,
-      "jogos": 8,
-      "v": 4,
-      "e": 2,
-      "d": 2,
-      "gp": 13,
-      "gc": 8,
-      "sg": 5,
-      "pos": 7
+      "pos": 8
     },
     {
       "nome": "Eunice",
@@ -95,7 +107,7 @@
       "gp": 17,
       "gc": 13,
       "sg": 4,
-      "pos": 8
+      "pos": 9
     },
     {
       "nome": "Luciene",
@@ -107,18 +119,6 @@
       "gp": 10,
       "gc": 17,
       "sg": -7,
-      "pos": 9
-    },
-    {
-      "nome": "Marcello",
-      "pontos": 11,
-      "jogos": 8,
-      "v": 3,
-      "e": 2,
-      "d": 3,
-      "gp": 12,
-      "gc": 7,
-      "sg": 5,
       "pos": 10
     },
     {

@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "27/06/2026 22:50",
+  "atualizado_em": "28/06/2026 11:41",
   "rodadas": [
     {
       "nome": "Primeira Rodada",
@@ -576,6 +576,22 @@
           "e2": "Uzbequistão",
           "g2": 1,
           "f2": "uz"
+        },
+        {
+          "e1": "Jordânia",
+          "g1": 1,
+          "f1": "jo",
+          "e2": "Argentina",
+          "g2": 3,
+          "f2": "ar"
+        },
+        {
+          "e1": "Argélia",
+          "g1": 3,
+          "f1": "dz",
+          "e2": "Áustria",
+          "g2": 3,
+          "f2": "at"
         }
       ]
     },
@@ -635,9 +651,9 @@
           "e1": "Espanha",
           "g1": null,
           "f1": "es",
-          "e2": null,
+          "e2": "Áustria",
           "g2": null,
-          "f2": null
+          "f2": "at"
         },
         {
           "e1": "Portugal",
@@ -683,9 +699,9 @@
           "e1": "Suiça",
           "g1": null,
           "f1": "ch",
-          "e2": null,
+          "e2": "Argélia",
           "g2": null,
-          "f2": null
+          "f2": "dz"
         },
         {
           "e1": "Colômbia",
