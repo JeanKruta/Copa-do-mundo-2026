@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "29/06/2026 16:16",
+  "atualizado_em": "29/06/2026 20:33",
   "rodadas": [
     {
       "nome": "Primeira Rodada",
@@ -617,10 +617,10 @@
         },
         {
           "e1": "Alemanha",
-          "g1": null,
+          "g1": 1,
           "f1": "de",
           "e2": "Paraguai",
-          "g2": null,
+          "g2": 1,
           "f2": "py"
         },
         {
@@ -741,7 +741,14 @@
           "g2": null,
           "f2": null
         },
-        null,
+        {
+          "e1": "Paraguai",
+          "g1": null,
+          "f1": "py",
+          "e2": null,
+          "g2": null,
+          "f2": null
+        },
         null,
         null,
         {
