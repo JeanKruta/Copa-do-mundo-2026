@@ -1,28 +1,28 @@
 {
-  "atualizado_em": "28/06/2026 11:41",
+  "atualizado_em": "28/06/2026 21:13",
   "tabela": [
     {
       "nome": "Guinho",
-      "pontos": 17,
-      "jogos": 9,
-      "v": 5,
+      "pontos": 20,
+      "jogos": 10,
+      "v": 6,
       "e": 2,
       "d": 2,
-      "gp": 24,
+      "gp": 25,
       "gc": 10,
-      "sg": 14,
+      "sg": 15,
       "pos": 1
     },
     {
       "nome": "Wagner",
       "pontos": 17,
-      "jogos": 9,
+      "jogos": 10,
       "v": 5,
       "e": 2,
-      "d": 2,
+      "d": 3,
       "gp": 14,
-      "gc": 7,
-      "sg": 7,
+      "gc": 8,
+      "sg": 6,
       "pos": 2
     },
     {

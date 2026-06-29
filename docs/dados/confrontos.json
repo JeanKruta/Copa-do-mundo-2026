@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "28/06/2026 11:41",
+  "atualizado_em": "28/06/2026 21:13",
   "rodadas": [
     {
       "nome": "Primeira Rodada",
@@ -597,14 +597,14 @@
     },
     {
       "nome": "Dezesseis Avos",
-      "desbloqueada": false,
+      "desbloqueada": true,
       "confrontos": [
         {
           "e1": "África do Sul",
-          "g1": null,
+          "g1": 0,
           "f1": "za",
           "e2": "Canadá",
-          "g2": null,
+          "g2": 1,
           "f2": "ca"
         },
         {
@@ -733,7 +733,14 @@
       "nome": "Oitavas",
       "desbloqueada": false,
       "confrontos": [
-        null,
+        {
+          "e1": "Canadá",
+          "g1": null,
+          "f1": "ca",
+          "e2": null,
+          "g2": null,
+          "f2": null
+        },
         null,
         null,
         null,
