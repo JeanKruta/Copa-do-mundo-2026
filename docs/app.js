@@ -249,12 +249,12 @@ function renderRodadas(dados) {
     cont.innerHTML = `<p class="aviso">Nenhum placar cadastrado ainda.</p>`;
   }
 
-  // default: Mata-mata se já tiver placar nele; senão, última fase de grupos com placar
+  // default: Mata-mata se houver alguma fase eliminatória; senão, última fase de grupos com placar
   let selecionada = null;
-  if (abaMata && abaMata.temPlacar) {
+  if (abaMata) {
     selecionada = abaMata;
   } else {
-    for (const t of tabs) if (t !== abaMata && t.temPlacar) selecionada = t;
+    for (const t of tabs) if (t.temPlacar) selecionada = t;
   }
 
   for (const t of tabs) {
