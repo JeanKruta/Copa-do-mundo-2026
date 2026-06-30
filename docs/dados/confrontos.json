@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "30/06/2026 08:31",
+  "atualizado_em": "30/06/2026 16:32",
   "rodadas": [
     {
       "nome": "Primeira Rodada",
@@ -673,10 +673,10 @@
         },
         {
           "e1": "Costa do Marfim",
-          "g1": null,
+          "g1": 1,
           "f1": "ci",
           "e2": "Noruega",
-          "g2": null,
+          "g2": 2,
           "f2": "no"
         },
         {
@@ -755,9 +755,9 @@
           "e1": "Brasil",
           "g1": null,
           "f1": "br",
-          "e2": null,
+          "e2": "Noruega",
           "g2": null,
-          "f2": null
+          "f2": "no"
         },
         null,
         null,
