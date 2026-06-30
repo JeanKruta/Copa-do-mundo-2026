@@ -1,15 +1,15 @@
 {
-  "atualizado_em": "29/06/2026 20:33",
+  "atualizado_em": "30/06/2026 08:31",
   "tabela": [
     {
       "nome": "Guinho",
-      "pontos": 21,
-      "jogos": 11,
+      "pontos": 22,
+      "jogos": 12,
       "v": 6,
-      "e": 3,
+      "e": 4,
       "d": 2,
-      "gp": 26,
-      "gc": 11,
+      "gp": 27,
+      "gc": 12,
       "sg": 15,
       "pos": 1
     },
@@ -99,13 +99,13 @@
     },
     {
       "nome": "Eunice",
-      "pontos": 13,
-      "jogos": 9,
+      "pontos": 14,
+      "jogos": 10,
       "v": 3,
-      "e": 4,
+      "e": 5,
       "d": 2,
-      "gp": 17,
-      "gc": 13,
+      "gp": 18,
+      "gc": 14,
       "sg": 4,
       "pos": 9
     },
