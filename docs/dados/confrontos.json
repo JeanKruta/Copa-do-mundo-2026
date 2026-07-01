@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "30/06/2026 16:32",
+  "atualizado_em": "30/06/2026 22:57",
   "rodadas": [
     {
       "nome": "Primeira Rodada",
@@ -625,10 +625,10 @@
         },
         {
           "e1": "França",
-          "g1": null,
+          "g1": 3,
           "f1": "fr",
           "e2": "Suécia",
-          "g2": null,
+          "g2": 0,
           "f2": "se"
         },
         {
@@ -745,9 +745,9 @@
           "e1": "Paraguai",
           "g1": null,
           "f1": "py",
-          "e2": null,
+          "e2": "França",
           "g2": null,
-          "f2": null
+          "f2": "fr"
         },
         null,
         null,
