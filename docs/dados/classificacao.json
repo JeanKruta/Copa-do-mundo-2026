@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "02/07/2026 09:19",
+  "atualizado_em": "03/07/2026 10:06",
   "tabela": [
     {
       "nome": "Guinho",
@@ -14,6 +14,18 @@
       "pos": 1
     },
     {
+      "nome": "Fabinho",
+      "pontos": 20,
+      "jogos": 11,
+      "v": 5,
+      "e": 5,
+      "d": 1,
+      "gp": 20,
+      "gc": 8,
+      "sg": 12,
+      "pos": 2
+    },
+    {
       "nome": "Wagner",
       "pontos": 20,
       "jogos": 12,
@@ -23,7 +35,7 @@
       "gp": 17,
       "gc": 10,
       "sg": 7,
-      "pos": 2
+      "pos": 3
     },
     {
       "nome": "Yan",
@@ -35,31 +47,31 @@
       "gp": 19,
       "gc": 17,
       "sg": 2,
-      "pos": 3
+      "pos": 4
     },
     {
-      "nome": "Roberta",
+      "nome": "Jean",
       "pontos": 18,
       "jogos": 11,
       "v": 5,
       "e": 3,
       "d": 3,
-      "gp": 19,
-      "gc": 14,
-      "sg": 5,
-      "pos": 4
+      "gp": 15,
+      "gc": 12,
+      "sg": 3,
+      "pos": 5
     },
     {
-      "nome": "Fabinho",
-      "pontos": 17,
-      "jogos": 10,
-      "v": 4,
-      "e": 5,
-      "d": 1,
-      "gp": 18,
-      "gc": 7,
-      "sg": 11,
-      "pos": 5
+      "nome": "Roberta",
+      "pontos": 18,
+      "jogos": 12,
+      "v": 5,
+      "e": 3,
+      "d": 4,
+      "gp": 19,
+      "gc": 17,
+      "sg": 2,
+      "pos": 6
     },
     {
       "nome": "Roberto",
@@ -71,18 +83,6 @@
       "gp": 14,
       "gc": 7,
       "sg": 7,
-      "pos": 6
-    },
-    {
-      "nome": "Jean",
-      "pontos": 15,
-      "jogos": 10,
-      "v": 4,
-      "e": 3,
-      "d": 3,
-      "gp": 13,
-      "gc": 12,
-      "sg": 1,
       "pos": 7
     },
     {
@@ -122,6 +122,18 @@
       "pos": 10
     },
     {
+      "nome": "Adriana",
+      "pontos": 14,
+      "jogos": 10,
+      "v": 4,
+      "e": 2,
+      "d": 4,
+      "gp": 12,
+      "gc": 13,
+      "sg": -1,
+      "pos": 11
+    },
+    {
       "nome": "Andrey",
       "pontos": 13,
       "jogos": 11,
@@ -131,30 +143,18 @@
       "gp": 19,
       "gc": 16,
       "sg": 3,
-      "pos": 11
-    },
-    {
-      "nome": "Adriana",
-      "pontos": 11,
-      "jogos": 9,
-      "v": 3,
-      "e": 2,
-      "d": 4,
-      "gp": 9,
-      "gc": 13,
-      "sg": -4,
       "pos": 12
     },
     {
       "nome": "Mônica",
       "pontos": 11,
-      "jogos": 10,
+      "jogos": 11,
       "v": 3,
       "e": 2,
-      "d": 5,
-      "gp": 10,
-      "gc": 22,
-      "sg": -12,
+      "d": 6,
+      "gp": 11,
+      "gc": 24,
+      "sg": -13,
       "pos": 13
     },
     {
