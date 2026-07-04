@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "03/07/2026 10:06",
+  "atualizado_em": "04/07/2026 11:05",
   "rodadas": [
     {
       "nome": "Primeira Rodada",
@@ -705,26 +705,26 @@
         },
         {
           "e1": "Colômbia",
-          "g1": null,
+          "g1": 1,
           "f1": "co",
           "e2": "Gana",
-          "g2": null,
+          "g2": 0,
           "f2": "gh"
         },
         {
           "e1": "Austrália",
-          "g1": null,
+          "g1": 1,
           "f1": "au",
           "e2": "Egito",
-          "g2": null,
+          "g2": 1,
           "f2": "eg"
         },
         {
           "e1": "Argentina",
-          "g1": null,
+          "g1": 1,
           "f1": "ar",
           "e2": "Cabo Verde",
-          "g2": null,
+          "g2": 1,
           "f2": "cv"
         }
       ]
@@ -785,11 +785,18 @@
           "e1": "Suiça",
           "g1": null,
           "f1": "ch",
-          "e2": null,
+          "e2": "Colômbia",
           "g2": null,
-          "f2": null
+          "f2": "co"
         },
-        null
+        {
+          "e1": "Egito",
+          "g1": null,
+          "f1": "eg",
+          "e2": "Argentina",
+          "g2": null,
+          "f2": "ar"
+        }
       ]
     },
     {
