@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "05/07/2026 11:18",
+  "atualizado_em": "05/07/2026 19:47",
   "rodadas": [
     {
       "nome": "Primeira Rodada",
@@ -767,10 +767,10 @@
         },
         {
           "e1": "Brasil",
-          "g1": null,
+          "g1": 1,
           "f1": "br",
           "e2": "Noruega",
-          "g2": null,
+          "g2": 2,
           "f2": "no"
         },
         {
@@ -812,7 +812,14 @@
           "f2": "fr"
         },
         null,
-        null,
+        {
+          "e1": "Noruega",
+          "g1": null,
+          "f1": "no",
+          "e2": null,
+          "g2": null,
+          "f2": null
+        },
         null
       ]
     },
