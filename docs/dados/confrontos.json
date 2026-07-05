@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "04/07/2026 11:05",
+  "atualizado_em": "05/07/2026 11:12",
   "rodadas": [
     {
       "nome": "Primeira Rodada",
@@ -731,22 +731,22 @@
     },
     {
       "nome": "Oitavas",
-      "desbloqueada": false,
+      "desbloqueada": true,
       "confrontos": [
         {
           "e1": "Canadá",
-          "g1": null,
+          "g1": 0,
           "f1": "ca",
           "e2": "Marrocos",
-          "g2": null,
+          "g2": 3,
           "f2": "ma"
         },
         {
           "e1": "Paraguai",
-          "g1": null,
+          "g1": 0,
           "f1": "py",
           "e2": "França",
-          "g2": null,
+          "g2": 1,
           "f2": "fr"
         },
         {
@@ -803,7 +803,14 @@
       "nome": "Quartas",
       "desbloqueada": false,
       "confrontos": [
-        null,
+        {
+          "e1": "Marrocos",
+          "g1": null,
+          "f1": "ma",
+          "e2": "França",
+          "g2": null,
+          "f2": "fr"
+        },
         null,
         null,
         null

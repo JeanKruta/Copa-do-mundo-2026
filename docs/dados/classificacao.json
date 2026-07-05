@@ -1,6 +1,30 @@
 {
-  "atualizado_em": "04/07/2026 11:05",
+  "atualizado_em": "05/07/2026 11:12",
   "tabela": [
+    {
+      "nome": "Guinho",
+      "pontos": 25,
+      "jogos": 14,
+      "v": 7,
+      "e": 4,
+      "d": 3,
+      "gp": 30,
+      "gc": 15,
+      "sg": 15,
+      "pos": 1
+    },
+    {
+      "nome": "Wagner",
+      "pontos": 23,
+      "jogos": 13,
+      "v": 7,
+      "e": 2,
+      "d": 4,
+      "gp": 18,
+      "gc": 10,
+      "sg": 8,
+      "pos": 2
+    },
     {
       "nome": "Yan",
       "pontos": 23,
@@ -11,19 +35,7 @@
       "gp": 20,
       "gc": 17,
       "sg": 3,
-      "pos": 1
-    },
-    {
-      "nome": "Guinho",
-      "pontos": 22,
-      "jogos": 12,
-      "v": 6,
-      "e": 4,
-      "d": 2,
-      "gp": 27,
-      "gc": 12,
-      "sg": 15,
-      "pos": 2
+      "pos": 3
     },
     {
       "nome": "Fabinho",
@@ -35,18 +47,6 @@
       "gp": 21,
       "gc": 9,
       "sg": 12,
-      "pos": 3
-    },
-    {
-      "nome": "Wagner",
-      "pontos": 20,
-      "jogos": 12,
-      "v": 6,
-      "e": 2,
-      "d": 4,
-      "gp": 17,
-      "gc": 10,
-      "sg": 7,
       "pos": 4
     },
     {
@@ -160,13 +160,13 @@
     {
       "nome": "Mônica",
       "pontos": 11,
-      "jogos": 11,
+      "jogos": 12,
       "v": 3,
       "e": 2,
-      "d": 6,
+      "d": 7,
       "gp": 11,
-      "gc": 24,
-      "sg": -13,
+      "gc": 25,
+      "sg": -14,
       "pos": 14
     }
   ]
