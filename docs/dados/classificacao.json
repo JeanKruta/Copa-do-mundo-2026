@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "09/07/2026 11:25",
+  "atualizado_em": "10/07/2026 11:01",
   "tabela": [
     {
       "nome": "Yan",
@@ -14,27 +14,27 @@
       "pos": 1
     },
     {
-      "nome": "Guinho",
-      "pontos": 25,
+      "nome": "Wagner",
+      "pontos": 26,
       "jogos": 14,
-      "v": 7,
-      "e": 4,
-      "d": 3,
-      "gp": 30,
-      "gc": 15,
-      "sg": 15,
+      "v": 8,
+      "e": 2,
+      "d": 4,
+      "gp": 20,
+      "gc": 10,
+      "sg": 10,
       "pos": 2
     },
     {
-      "nome": "Wagner",
-      "pontos": 23,
-      "jogos": 13,
+      "nome": "Guinho",
+      "pontos": 25,
+      "jogos": 15,
       "v": 7,
-      "e": 2,
+      "e": 4,
       "d": 4,
-      "gp": 18,
-      "gc": 10,
-      "sg": 8,
+      "gp": 30,
+      "gc": 17,
+      "sg": 13,
       "pos": 3
     },
     {

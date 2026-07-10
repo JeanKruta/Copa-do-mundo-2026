@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "09/07/2026 11:25",
+  "atualizado_em": "10/07/2026 11:01",
   "rodadas": [
     {
       "nome": "Primeira Rodada",
@@ -801,14 +801,14 @@
     },
     {
       "nome": "Quartas",
-      "desbloqueada": false,
+      "desbloqueada": true,
       "confrontos": [
         {
           "e1": "Marrocos",
-          "g1": null,
+          "g1": 0,
           "f1": "ma",
           "e2": "França",
-          "g2": null,
+          "g2": 2,
           "f2": "fr"
         },
         {
@@ -841,7 +841,14 @@
       "nome": "Semis",
       "desbloqueada": false,
       "confrontos": [
-        null,
+        {
+          "e1": "França",
+          "g1": null,
+          "f1": "fr",
+          "e2": null,
+          "g2": null,
+          "f2": null
+        },
         null
       ]
     },
