@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "14/07/2026 17:51",
+  "atualizado_em": "14/07/2026 17:59",
   "rodadas": [
     {
       "nome": "Primeira Rodada",
@@ -839,14 +839,14 @@
     },
     {
       "nome": "Semis",
-      "desbloqueada": false,
+      "desbloqueada": true,
       "confrontos": [
         {
           "e1": "França",
-          "g1": null,
+          "g1": 0,
           "f1": "fr",
           "e2": "Espanha",
-          "g2": null,
+          "g2": 2,
           "f2": "es"
         },
         {
