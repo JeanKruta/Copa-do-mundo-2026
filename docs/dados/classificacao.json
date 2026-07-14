@@ -1,16 +1,16 @@
 {
-  "atualizado_em": "10/07/2026 11:01",
+  "atualizado_em": "14/07/2026 17:51",
   "tabela": [
     {
       "nome": "Yan",
       "pontos": 27,
-      "jogos": 14,
+      "jogos": 15,
       "v": 8,
       "e": 3,
-      "d": 3,
-      "gp": 22,
-      "gc": 18,
-      "sg": 4,
+      "d": 4,
+      "gp": 23,
+      "gc": 20,
+      "sg": 3,
       "pos": 1
     },
     {
@@ -38,6 +38,18 @@
       "pos": 3
     },
     {
+      "nome": "Roberta",
+      "pontos": 24,
+      "jogos": 14,
+      "v": 7,
+      "e": 3,
+      "d": 4,
+      "gp": 24,
+      "gc": 20,
+      "sg": 4,
+      "pos": 4
+    },
+    {
       "nome": "Fabinho",
       "pontos": 21,
       "jogos": 14,
@@ -47,43 +59,43 @@
       "gp": 22,
       "gc": 14,
       "sg": 8,
-      "pos": 4
-    },
-    {
-      "nome": "Roberta",
-      "pontos": 21,
-      "jogos": 13,
-      "v": 6,
-      "e": 3,
-      "d": 4,
-      "gp": 22,
-      "gc": 19,
-      "sg": 3,
       "pos": 5
     },
     {
       "nome": "Jean",
-      "pontos": 19,
-      "jogos": 12,
+      "pontos": 20,
+      "jogos": 13,
       "v": 5,
-      "e": 4,
+      "e": 5,
       "d": 3,
-      "gp": 15,
-      "gc": 12,
+      "gp": 16,
+      "gc": 13,
       "sg": 3,
       "pos": 6
     },
     {
-      "nome": "Marcello",
-      "pontos": 18,
+      "nome": "Adriana",
+      "pontos": 20,
       "jogos": 12,
-      "v": 5,
-      "e": 3,
+      "v": 6,
+      "e": 2,
       "d": 4,
-      "gp": 20,
-      "gc": 13,
-      "sg": 7,
+      "gp": 15,
+      "gc": 14,
+      "sg": 1,
       "pos": 7
+    },
+    {
+      "nome": "Marcello",
+      "pontos": 19,
+      "jogos": 13,
+      "v": 5,
+      "e": 4,
+      "d": 4,
+      "gp": 21,
+      "gc": 14,
+      "sg": 7,
+      "pos": 8
     },
     {
       "nome": "Roberto",
@@ -95,30 +107,18 @@
       "gp": 15,
       "gc": 10,
       "sg": 5,
-      "pos": 8
-    },
-    {
-      "nome": "Adriana",
-      "pontos": 17,
-      "jogos": 11,
-      "v": 5,
-      "e": 2,
-      "d": 4,
-      "gp": 13,
-      "gc": 13,
-      "sg": 0,
       "pos": 9
     },
     {
       "nome": "Andrey",
       "pontos": 16,
-      "jogos": 12,
+      "jogos": 13,
       "v": 4,
       "e": 4,
-      "d": 4,
-      "gp": 23,
-      "gc": 17,
-      "sg": 6,
+      "d": 5,
+      "gp": 24,
+      "gc": 19,
+      "sg": 5,
       "pos": 10
     },
     {

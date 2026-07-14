@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "10/07/2026 11:01",
+  "atualizado_em": "14/07/2026 17:51",
   "rodadas": [
     {
       "nome": "Primeira Rodada",
@@ -813,26 +813,26 @@
         },
         {
           "e1": "Bélgica",
-          "g1": null,
+          "g1": 1,
           "f1": "be",
           "e2": "Espanha",
-          "g2": null,
+          "g2": 2,
           "f2": "es"
         },
         {
           "e1": "Noruega",
-          "g1": null,
+          "g1": 1,
           "f1": "no",
           "e2": "Inglaterra",
-          "g2": null,
+          "g2": 2,
           "f2": "gb-eng"
         },
         {
           "e1": "Suiça",
-          "g1": null,
+          "g1": 1,
           "f1": "ch",
           "e2": "Argentina",
-          "g2": null,
+          "g2": 1,
           "f2": "ar"
         }
       ]
@@ -845,11 +845,18 @@
           "e1": "França",
           "g1": null,
           "f1": "fr",
-          "e2": null,
+          "e2": "Espanha",
           "g2": null,
-          "f2": null
+          "f2": "es"
         },
-        null
+        {
+          "e1": "Inglaterra",
+          "g1": null,
+          "f1": "gb-eng",
+          "e2": "Argentina",
+          "g2": null,
+          "f2": "ar"
+        }
       ]
     },
     {
