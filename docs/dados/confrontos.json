@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "14/07/2026 17:59",
+  "atualizado_em": "14/07/2026 18:09",
   "rodadas": [
     {
       "nome": "Primeira Rodada",
@@ -863,7 +863,14 @@
       "nome": "Final",
       "desbloqueada": false,
       "confrontos": [
-        null
+        {
+          "e1": "Espanha",
+          "g1": null,
+          "f1": "es",
+          "e2": null,
+          "g2": null,
+          "f2": null
+        }
       ]
     }
   ]
