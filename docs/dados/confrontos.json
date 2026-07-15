@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "14/07/2026 18:09",
+  "atualizado_em": "15/07/2026 18:22",
   "rodadas": [
     {
       "nome": "Primeira Rodada",
@@ -851,10 +851,10 @@
         },
         {
           "e1": "Inglaterra",
-          "g1": null,
+          "g1": 1,
           "f1": "gb-eng",
           "e2": "Argentina",
-          "g2": null,
+          "g2": 2,
           "f2": "ar"
         }
       ]
@@ -867,9 +867,9 @@
           "e1": "Espanha",
           "g1": null,
           "f1": "es",
-          "e2": null,
+          "e2": "Argentina",
           "g2": null,
-          "f2": null
+          "f2": "ar"
         }
       ]
     }

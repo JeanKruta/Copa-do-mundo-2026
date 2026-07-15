@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "14/07/2026 18:09",
+  "atualizado_em": "15/07/2026 18:22",
   "tabela": [
     {
       "nome": "Yan",
@@ -40,13 +40,13 @@
     {
       "nome": "Roberta",
       "pontos": 24,
-      "jogos": 14,
+      "jogos": 15,
       "v": 7,
       "e": 3,
-      "d": 4,
-      "gp": 24,
-      "gc": 20,
-      "sg": 4,
+      "d": 5,
+      "gp": 25,
+      "gc": 22,
+      "sg": 3,
       "pos": 4
     },
     {
@@ -62,6 +62,18 @@
       "pos": 5
     },
     {
+      "nome": "Marcello",
+      "pontos": 22,
+      "jogos": 14,
+      "v": 6,
+      "e": 4,
+      "d": 4,
+      "gp": 23,
+      "gc": 15,
+      "sg": 8,
+      "pos": 6
+    },
+    {
       "nome": "Fabinho",
       "pontos": 21,
       "jogos": 14,
@@ -71,7 +83,7 @@
       "gp": 22,
       "gc": 14,
       "sg": 8,
-      "pos": 6
+      "pos": 7
     },
     {
       "nome": "Jean",
@@ -83,18 +95,6 @@
       "gp": 16,
       "gc": 13,
       "sg": 3,
-      "pos": 7
-    },
-    {
-      "nome": "Marcello",
-      "pontos": 19,
-      "jogos": 13,
-      "v": 5,
-      "e": 4,
-      "d": 4,
-      "gp": 21,
-      "gc": 14,
-      "sg": 7,
       "pos": 8
     },
     {
