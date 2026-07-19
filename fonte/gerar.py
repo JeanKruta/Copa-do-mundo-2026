@@ -181,9 +181,36 @@ def main():
         "Final": 1,
     }
 
+    # Aba "Campeao" / "Campeão": uma coluna "pais" com o país campeão (após empate na final, etc.)
+    ABAS_CAMPEAO = {"campeao", "campeão"}
+    campeao = None
+    for nome_aba in wb.sheetnames:
+        if normalizar(nome_aba) not in ABAS_CAMPEAO:
+            continue
+        ws = wb[nome_aba]
+        for i, row in enumerate(ws.iter_rows(values_only=True), start=1):
+            if i == 1 or not row:
+                continue
+            pais = ("" if row[0] is None else str(row[0])).strip()
+            if not pais:
+                continue
+            iso = iso_de(pais)
+            if not iso:
+                erro(f"Aba '{nome_aba}', linha {i}: país sem bandeira '{pais}'.")
+            campeao = {
+                "pais": pais,
+                "flag": iso,
+                "dono": dono_por_iso.get(iso),
+            }
+            break
+        break
+
     rodadas = []
     total = 0
     for nome_aba in wb.sheetnames:
+        if normalizar(nome_aba) in ABAS_CAMPEAO:
+            continue  # não é rodada de confrontos
+
         ws = wb[nome_aba]
         eh_knockout = nome_aba in TAMANHOS_KNOCKOUT
         tamanho = TAMANHOS_KNOCKOUT.get(nome_aba, 0)
@@ -271,7 +298,10 @@ def main():
     with open(os.path.join(SAIDA_DIR, "classificacao.json"), "w", encoding="utf-8") as f:
         json.dump({"atualizado_em": atualizado_em, "tabela": tabela}, f, ensure_ascii=False, indent=2)
     with open(os.path.join(SAIDA_DIR, "confrontos.json"), "w", encoding="utf-8") as f:
-        json.dump({"atualizado_em": atualizado_em, "rodadas": rodadas}, f, ensure_ascii=False, indent=2)
+        json.dump(
+            {"atualizado_em": atualizado_em, "rodadas": rodadas, "campeao": campeao},
+            f, ensure_ascii=False, indent=2,
+        )
 
     # Cache-buster: atualiza ?v= no index.html para forçar o navegador a buscar
     # a versão nova do JS/CSS sempre que publicarmos.
@@ -286,6 +316,9 @@ def main():
 
     desbloqueadas = sum(1 for r in rodadas if r["desbloqueada"])
     print(f"OK: {total} confronto(s) em {desbloqueadas}/{len(rodadas)} rodada(s) com placar.")
+    if campeao:
+        dono = campeao["dono"] or "(sem dono)"
+        print(f"Campeão: {campeao['pais']} — {dono}")
     print("Gerados: docs/dados/classificacao.json e docs/dados/confrontos.json")
 
 

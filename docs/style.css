@@ -294,6 +294,56 @@ td.pts { font-weight: 700; color: var(--verde-escuro); }
   color: var(--verde-escuro);
 }
 
+.bracket-side.bracket-center {
+  flex-direction: column;
+  justify-content: center;
+  gap: 14px;
+}
+
+.campeao {
+  background: linear-gradient(160deg, #fff8e1, #ffe7a0);
+  border: 2px solid var(--ouro);
+  border-radius: 12px;
+  padding: 12px 10px;
+  text-align: center;
+  width: 150px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 14px rgba(242, 193, 78, 0.35);
+}
+
+.campeao-titulo {
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: #7a5c00;
+  margin-bottom: 8px;
+}
+
+.campeao-pais {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 800;
+  font-size: 0.95rem;
+  color: var(--verde-escuro);
+}
+
+.campeao-pais img {
+  width: 28px;
+  height: auto;
+  border-radius: 3px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.12);
+}
+
+.campeao-dono {
+  margin-top: 6px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #4a3b00;
+}
+
 .match {
   display: grid;
   grid-template-columns: 1fr auto 1fr;

@@ -122,7 +122,7 @@ function bmLinha(nome, codigoBandeira, placar, ehVencedor) {
   return row;
 }
 
-function bracketMatch(c) {
+function bracketMatch(c, campeaoPais) {
   const div = document.createElement("div");
   div.className = "bm";
 
@@ -133,10 +133,11 @@ function bracketMatch(c) {
   }
 
   const temPlacar = c.g1 !== null && c.g1 !== undefined && c.g2 !== null && c.g2 !== undefined;
-  const venceu1 = temPlacar && c.g1 > c.g2;
-  const venceu2 = temPlacar && c.g2 > c.g1;
+  const venceu1 = (temPlacar && c.g1 > c.g2) || (!!campeaoPais && c.e1 === campeaoPais);
+  const venceu2 = (temPlacar && c.g2 > c.g1) || (!!campeaoPais && c.e2 === campeaoPais);
 
-  if (!temPlacar) div.classList.add("bm-agendado");
+  if (!temPlacar && !campeaoPais) div.classList.add("bm-agendado");
+  if (campeaoPais && (venceu1 || venceu2)) div.classList.add("bm-final-campeao");
 
   div.append(
     bmLinha(c.e1, c.f1, temPlacar ? c.g1 : null, venceu1),
@@ -145,7 +146,7 @@ function bracketMatch(c) {
   return div;
 }
 
-function bracketCol(label, matches) {
+function bracketCol(label, matches, campeaoPais) {
   const col = document.createElement("div");
   col.className = "bracket-col";
   col.dataset.qtd = matches.length;
@@ -157,7 +158,7 @@ function bracketCol(label, matches) {
 
   const items = document.createElement("div");
   items.className = "bracket-col-items";
-  matches.forEach((m) => items.appendChild(bracketMatch(m)));
+  matches.forEach((m) => items.appendChild(bracketMatch(m, campeaoPais)));
   col.appendChild(items);
 
   return col;
@@ -170,7 +171,7 @@ function bracketSide(lado, colunas) {
   return side;
 }
 
-function mostrarMataMata(rodadas) {
+function mostrarMataMata(rodadas, campeao) {
   const cont = document.getElementById("confrontos");
   cont.innerHTML = "";
 
@@ -197,7 +198,13 @@ function mostrarMataMata(rodadas) {
     bracketCol("Oitavas", oitavas.slice(4, 8)),
     bracketCol("Dezesseis Avos", avos.slice(8, 16)),
   ];
-  const centro = [bracketCol("Final", final)];
+
+  const centro = document.createElement("div");
+  centro.className = "bracket-side bracket-center";
+  centro.appendChild(bracketCol("Final", final, campeao?.pais));
+  if (campeao) {
+    centro.appendChild(criarCampeao(campeao));
+  }
 
   const wrap = document.createElement("div");
   wrap.className = "bracket-wrap";
@@ -206,12 +213,35 @@ function mostrarMataMata(rodadas) {
   bracket.className = "bracket";
   bracket.append(
     bracketSide("left", ladoEsq),
-    bracketSide("center", centro),
+    centro,
     bracketSide("right", ladoDir),
   );
 
   wrap.append(bracket);
   cont.append(wrap);
+}
+
+function criarCampeao(campeao) {
+  const card = document.createElement("div");
+  card.className = "campeao";
+
+  const titulo = document.createElement("div");
+  titulo.className = "campeao-titulo";
+  titulo.textContent = "🏆 Campeão";
+
+  const pais = document.createElement("div");
+  pais.className = "campeao-pais";
+  if (campeao.flag) pais.appendChild(bandeira(campeao.flag, campeao.pais));
+  const nomePais = document.createElement("span");
+  nomePais.textContent = campeao.pais;
+  pais.appendChild(nomePais);
+
+  const dono = document.createElement("div");
+  dono.className = "campeao-dono";
+  dono.textContent = campeao.dono ? campeao.dono : "";
+
+  card.append(titulo, pais, dono);
+  return card;
 }
 
 function renderRodadas(dados) {
@@ -239,7 +269,7 @@ function renderRodadas(dados) {
       label: "Mata-mata",
       desbloqueada: true, // sempre aberta para visualizar o chaveamento
       temPlacar: mata.some((r) => r.desbloqueada),
-      mostrar: () => mostrarMataMata(mata),
+      mostrar: () => mostrarMataMata(mata, dados.campeao),
     };
     tabs.push(abaMata);
   }

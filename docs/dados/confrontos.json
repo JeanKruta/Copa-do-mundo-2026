@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "15/07/2026 18:22",
+  "atualizado_em": "19/07/2026 19:28",
   "rodadas": [
     {
       "nome": "Primeira Rodada",
@@ -861,17 +861,22 @@
     },
     {
       "nome": "Final",
-      "desbloqueada": false,
+      "desbloqueada": true,
       "confrontos": [
         {
           "e1": "Espanha",
-          "g1": null,
+          "g1": 0,
           "f1": "es",
           "e2": "Argentina",
-          "g2": null,
+          "g2": 0,
           "f2": "ar"
         }
       ]
     }
-  ]
+  ],
+  "campeao": {
+    "pais": "Espanha",
+    "flag": "es",
+    "dono": "Adriana"
+  }
 }
